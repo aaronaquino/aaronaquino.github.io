@@ -1,0 +1,98 @@
+/**
+ * Formatting utilities.
+ */
+
+body {
+	min-width: 605px;
+}
+
+.fitted-image {
+	width: 100%;
+}
+
+.image-outline {
+	padding: 1px;
+    border: 1px solid black;
+}
+
+.image-50 {
+	width: 50vw;
+}
+
+.image-35 {
+	width: 35vw;
+}
+
+.image-40 {
+	width: 40vw;
+}
+
+.image-20 {
+	width: 20vw;
+}
+
+.image-description {
+	font-weight: 400;
+}
+
+.link-no-underline {
+	text-decoration: none; /* removes underlines */
+}
+
+#profile-picture {
+	max-width: 35vw;
+}
+
+.youtube-container {
+	position:relative;
+	padding-bottom:56.25%;
+	height:0;
+	overflow:hidden;
+}
+
+.youtube-container iframe {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/**
+ * Widget formatting.
+ */
+
+#social-icons a:hover {
+	border-bottom:3px solid rgb(245, 0, 46);
+}
+
+#logo {
+	max-height: 42px;
+}
+
+#logo:hover{
+	fill: rgb(245, 0, 46);
+}
+
+/*#profile-picture {
+	max-height: 200px;
+	width: auto;
+}*/
+
+.copyright-text {
+	font-weight: 400;
+}
+
+
+/**
+ * Experience-related rules.
+ */
+
+.experience-title {
+	font-size: 82px;
+	text-transform: uppercase;
+}
+
+.experience-header {
+	background-color: #BDBDBD;
+}
