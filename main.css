@@ -6,6 +6,10 @@ body {
 	min-width: 605px;
 }
 
+#choreo-top-row {
+	padding-top: 16px;
+}
+
 .fitted-image {
 	width: 100%;
 }
