@@ -1,50 +1,87 @@
 /**
- * Formatting utilities.
+ * Homepage-specific rules.
  */
 
-body {
-	min-width: 605px;
+hr.section-divider {
+	min-width: 45px;
 }
+
+#bio-long-text {
+	font-size: 16px;
+}
+
+#bio-one-line {
+	font-size: 22px;
+	margin: 30px 0px 20px;
+}
+
+#down-arrow {
+	cursor: pointer;
+	cursor: hand;
+	max-width: 10vw;
+}
+
+#down-arrow-container {
+	margin-bottom: 20px;
+}
+
+#homepage-name {
+	margin-top: 50px;
+	min-width: 250px;
+	max-width: 30vw;
+}
+
+#names {
+    margin: 80px 0px 0px;
+}
+
+#profile-picture {
+	max-width: 18vw;
+	min-width: 150px;
+}
+
+#profile-picture-container {
+	padding-top: 40px;
+}
+
+#social-media-message-text {
+	font-size: 22px;
+}
+
+
+/**
+ * Formatting utilities.
+ */
 
 #choreo-top-row {
 	padding-top: 16px;
 }
 
-.fitted-image {
-	width: 100%;
-}
-
-.image-outline {
-	padding: 1px;
-    border: 1px solid black;
-}
-
-.image-50 {
-	width: 50vw;
-}
-
-.image-40 {
-	width: 40vw;
-}
-
-.image-35 {
-	width: 35vw;
-}
-
-.image-20 {
-	width: 20vw;
-}
-
-.image-description {
-	font-weight: 400;
+.colored-link {
+	color: #0d47a1!important;
+	text-decoration: none; /* removes underlines */
 }
 
 .link-no-underline {
 	text-decoration: none; /* removes underlines */
 }
 
-#profile-picture {
-	max-width: 35vw;
+.more-info-button {
+	margin-top: 24px;
+}
+
+.role-description {
+	font-size: 24px;
+}
+
+.role-title {
+	font-size: 7em;
+}
+
+@media screen and (max-width: 650px) {
+  .role-title {
+    font-size: calc(4vw + 4vh + 2vmin);
+  }
 }
 
 .youtube-container {
@@ -62,23 +99,56 @@ body {
 	height:100%;
 }
 
+
 /**
- * Widget formatting.
+ * Image utilities.
+ */
+
+.image-outline {
+	padding: 1px;
+    border: 1px solid black;
+}
+
+.image-50, .image-40, .image-35 {
+	min-width: 320px;
+}
+
+.fitted-image {
+	width: 100%;
+}
+
+.image-50 {
+	width: 50vw;
+}
+
+.image-40 {
+	width: 40vw;
+}
+
+.image-35 {
+	width: 35vw;
+}
+
+.image-description {
+	font-weight: 400;
+}
+
+
+/**
+ * Social icons and footer formatting.
  */
 
 #social-icons a:hover {
-	border-bottom:3px solid rgb(245, 0, 46);
+	border-bottom:3px solid #0d47a1;
 }
 
 #logo {
+	cursor: pointer;
 	max-height: 42px;
 }
 
-#logo:hover{
-	fill: rgb(245, 0, 46);
-}
-
 .copyright-text {
+	font-size: 1em;
 	font-weight: 400;
 }
 
@@ -87,11 +157,81 @@ body {
  * Experience-related rules.
  */
 
+.experience-container {
+	padding: 0px 32px;
+}
+
 .experience-title {
-	font-size: 82px;
+	font-size: 7em;
 	text-transform: uppercase;
 }
 
-.experience-header {
-	background-color: #BDBDBD;
+@media screen and (max-width: 700px) {
+  .experience-title {
+    font-size: calc(4vw + 4vh + 2vmin);
+  }
+}
+
+.experience-location {
+	font-size: 24px;
+}
+
+
+/**
+ * Hacker rules.
+ */
+
+#google-slides-container {
+	background-color: #ffe28d !important;
+	color: #000 !important;
+}
+
+#choreo-room-container {
+	background-color: #a7a6a6 !important;
+	color:#fff !important;
+}
+
+#google-maps-container {
+	background-color: #da736f !important;
+	color: #fff !important;
+}
+
+
+/**
+ * Connector rules.
+ */
+
+#bosp-container {
+	background-color: #9ac8dc !important;
+	color:#000 !important;
+}
+
+#pasu-container {
+	background-color: #d7dae1 !important;
+	color:#000 !important;
+}
+
+#spcsi-container {
+	background-color: #b37262 !important;
+	color:#fff !important;
+}
+
+#eagle-scout-container {
+	background-color: #e6dec4 !important;
+	color:#000 !important;
+}
+
+
+/**
+ * Connector rules.
+ */
+
+#common-origins-container {
+	background-color: #fbb392 !important;
+	color:#000 !important;
+}
+
+#choreography-container {
+	background-color: #f1cfb1 !important;
+	color:#000 !important;
 }

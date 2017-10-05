@@ -3,7 +3,7 @@
 
 <head>
 	<title>Aaron Aquino</title>
-	<link rel="icon" href="images/logo.png">
+	<link rel="icon" href="assets/logo_black.png">
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400">
@@ -11,39 +11,58 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
-<body class="w3-light-grey">
+<body>
 
 <header>
 	<div id="menu"></div>
 </header>
 
-<div id="home" class="w3-container w3-light-grey">
-	<h1 class="w3-center">AARON AQUINO</h1>
-	<h3 class="w3-center">
-		Stanford undergrad, CS ninja, middle child, urban dancer, and Spanish aficionado
-	</h3>
-	<div class="w3-row-padding">
-		<p class="w3-col l10">
-			Avocados. <i>Inception</i>. Early morning workouts. Kinjaz. MSTR watches. Fall Out Boy. Professor Layton. Sublime Text 2. Corgis. Jasmine milk tea. Cloud storage. Star Wars. Minimalism. Warm hugs. Reflection.<br><br>
-
-			As a student of computer science, dance, and life, I strive to pave my own way through a combination of curiosity, service, love and humility. Respect all, fear none.<br><br>
-		</p>
-  		<div class="w3-col l2 w3-center">
-  			<img id="profile-picture" class="w3-center fitted-image" src="images/profile.png">
-		</div>
+<div id="homepage-splash" class="w3-container">
+	<div class="w3-center">
+		<img id="homepage-name" src="assets/name.svg">	
 	</div>
-		<h3 class="w3-container w3-center">
-			Intrigued? Excited? Confused? <a href="mailto:aaron33@stanford.edu" class="link-no-underline w3-hover-text-strawberry-red">Send me a message</a>, and connect with me on social media:
-		</h3>
+	<hr class="section-divider">
+	<h3 id="bio-one-line" class="w3-center">
+		Stanford undergrad, CS student, urban dancer, Spanish aficionado, and middle child
+	</h3>
+	<div id="down-arrow-container" class="w3-center">
+		<img id="down-arrow" class="w3-center" src="assets/down_arrow_black.svg">
+	</div>
 </div>
 
-<div id="social-icons" class="w3-container w3-center"></div>
+<div id="about-me" class="w3-container w3-soft-teal">
+	<div id="profile-picture-container" class="w3-center">
+		<img id="profile-picture" class="w3-circle" src="assets/profile.png">
+	</div>
+	<div id="bio-long" class="w3-row">
+  		<div class="w3-col l3 m2 s2">
+  			<p></p>
+		</div>
+  		<div class="w3-col l6 m8 s8">
+			<p id="bio-long-text" class="w3-center">
+				Avocados. <i>Inception</i>. Kinjaz. MSTR watches. Fall Out Boy. Professor Layton. Corgis. Jasmine milk tea. Cloud storage. Star Wars. Minimalism. Warm hugs. Reflection.<br><br>
 
-<h2></h2>
+				As a student of computer science, dance, and life, I strive to pave my own way through a combination of curiosity, service, love and humility. Reach out, and let's create something exciting together.<br><br>
+			</p>
+		</div>
+  		<div class="w3-col l3 m2 s2">
+  			<p></p>
+		</div>
+	</div>
+</div>
+
+<div id="social-media-message" class="w3-center w3-padding-16">
+	<h3 id="social-media-message-text">
+		Check out my <a href="assets/Aaron_Aquino_Resume.pdf" target="_blank" class="colored-link">past work</a>, and connect with me on social media:
+	</h3>
+	<div id="social-icons" class="w3-center"></div>
+</div>
 
 <footer id="copyright-footer" class="w3-container"></footer>
 
 </body>
 
 <script src="sections.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="homepage.js"></script>
 </html>
