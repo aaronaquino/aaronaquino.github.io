@@ -113,10 +113,6 @@ hr.section-divider {
 	min-width: 320px;
 }
 
-.fitted-image {
-	width: 100%;
-}
-
 .image-50 {
 	width: 50vw;
 }
@@ -131,6 +127,24 @@ hr.section-divider {
 
 .image-description {
 	font-weight: 400;
+}
+
+.responsive-square {/*
+	max-width: 20vw;
+	min-width: 150px;*/
+	max-width: 230px;
+	width: 70vw;
+	/*width: 100%;*/
+}
+
+.responsive-rectangle {
+	max-width: 375px;
+	width: 70vw;
+}
+
+.responsive-skinny-rectangle {
+	max-width: 450px;
+	width: 70vw;
 }
 
 
@@ -217,13 +231,13 @@ hr.section-divider {
 }
 
 #eagle-scout-container {
-	background-color: #e6dec4 !important;
+	background-color: #d0dbe9 !important;
 	color:#000 !important;
 }
 
 
 /**
- * Connector rules.
+ * Dancer rules.
  */
 
 #common-origins-container {
