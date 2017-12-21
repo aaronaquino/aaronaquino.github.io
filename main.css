@@ -129,12 +129,9 @@ hr.section-divider {
 	font-weight: 400;
 }
 
-.responsive-square {/*
-	max-width: 20vw;
-	min-width: 150px;*/
+.responsive-square {
 	max-width: 230px;
 	width: 70vw;
-	/*width: 100%;*/
 }
 
 .responsive-rectangle {
