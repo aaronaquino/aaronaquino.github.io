@@ -144,6 +144,11 @@ hr.section-divider {
 	width: 70vw;
 }
 
+.responsive-vertical-rectangle {
+	max-width: 275px;
+	width: 22vw;
+}
+
 
 /**
  * Social icons and footer formatting.
@@ -192,19 +197,28 @@ hr.section-divider {
  * Hacker rules.
  */
 
+#choreo-room-container {
+	background-color: #313131 !important;
+	color:#fff !important;
+}
+
 #google-slides-container {
 	background-color: #ffe28d !important;
 	color: #000 !important;
 }
 
-#choreo-room-container {
-	background-color: #a7a6a6 !important;
-	color:#fff !important;
-}
-
 #google-maps-container {
 	background-color: #da736f !important;
 	color: #fff !important;
+}
+
+#app-store-badge-container {
+	margin-top: 32px;
+}
+
+#app-store-badge {
+	cursor: pointer;
+	cursor: hand;
 }
 
 
