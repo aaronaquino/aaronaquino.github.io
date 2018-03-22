@@ -256,6 +256,11 @@ hr.section-divider {
 	color:#000 !important;
 }
 
+#legacy-container {
+	background-color: #89beea !important;
+	color:#000 !important;	
+}
+
 #choreography-container {
 	background-color: #f1cfb1 !important;
 	color:#000 !important;
