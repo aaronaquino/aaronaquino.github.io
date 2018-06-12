@@ -284,7 +284,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-theme-primary,.w3-hover-theme-primary:hover{color:#000!important;background-color:#e1f5fe!important}
 .w3-theme-light,.w3-hover-theme-light:hover{color:#000!important;background-color:#2286c3!important}
 .w3-theme-dark,.w3-hover-theme-dark:hover{color:#fff!important;background-color:#0d47a1!important}
-.w3-soft-teal,.w3-hover-soft-teal:hover{color:#000!important;background-color:#cee6e0!important}
+.w3-soft-purple,.w3-hover-soft-purple:hover{color:#000!important;background-color:#94a6cc70!important}
 .w3-carbon,.w3-hover-carbon:hover{color:#000!important;background-color:#a9a9a9!important}
 .w3-light-grey,.w3-hover-light-grey:hover{color:#000!important;background-color:#f1f1f1!important}
 .w3-dark-grey,.w3-hover-dark-grey:hover{color:#000!important;background-color:#bdbdbd!important}
@@ -300,7 +300,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-text-strawberry-red,.w3-hover-text-strawberry-red:hover{color:rgb(245, 0, 46)!important}
 .w3-text-theme-primary,.w3-hover-text-theme-primary:hover{color:#e1f5fe!important}
 .w3-text-theme-dark,.w3-hover-text-theme-dark:hover{color:#0d47a1!important}
-.w3-text-soft-teal,.w3-hover-text-soft-purple:hover{color:#cee6e0!important}
+.w3-text-soft-purple,.w3-hover-text-soft-purple:hover{color:#94a6cc70!important}
 .w3-text-carbon,.w3-hover-text-carbon:hover{color:#a9a9a9!important}
 .w3-text-cyan,.w3-hover-text-cyan:hover{color:#00bcd4!important}
 .w3-text-blue-grey,.w3-hover-text-blue-grey:hover{color:#607d8b!important}
