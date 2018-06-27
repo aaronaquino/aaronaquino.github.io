@@ -197,6 +197,11 @@ hr.section-divider {
  * Hacker rules.
  */
 
+#transitcat-container {
+	background-color: #7a9e82 !important;
+	color: #fff !important;
+}
+
 #choreo-room-container {
 	background-color: #313131 !important;
 	color:#fff !important;
@@ -210,6 +215,11 @@ hr.section-divider {
 #google-maps-container {
 	background-color: #da736f !important;
 	color: #fff !important;
+}
+
+#transitcat-needfinding-list {
+	font-size:18px;
+	font-weight:300;
 }
 
 #app-store-badge-container {
