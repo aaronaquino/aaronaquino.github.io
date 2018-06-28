@@ -26,13 +26,13 @@
 
 <div class="experience-container w3-padding-24">
 	<p>
-		All Computer Science majors at Stanford are required to carry out a senior capstone project, so during my final quarter as an undergrad I collaborated with two friends to build <a href="https://github.com/aaronaquino/transitcat" target="_blank" class="colored-link">Transitcat</a>, a web application aimed at public transit planners that helps them visualize and better understand their networks. In order to narrow down what we wanted to work on, we conducted needfinding interviews with folks from many professions, including urban studies lecturers, actual public transit planners, and software developers who work on other public transit-oriented products. Based on these interviews, we were able to identify gaps in the market and decided to build a tool that:
+		All Computer Science majors at Stanford are required to carry out a senior capstone project, so during my final quarter as an undergrad I collaborated with two friends to build <a href="https://github.com/aaronaquino/transitcat" target="_blank" class="colored-link">Transitcat</a>, a web application aimed at public transit planners that helps them visualize and better understand their networks. In order to narrow down what we wanted to work on, we conducted needfinding interviews with folks from many professions, including public transit planners, urban studies lecturers and software developers who work on other public transit-oriented products. Based on these interviews, we were able to identify gaps in the market and decided to build a tool that:
 	</p>
 	<ul id="transitcat-needfinding-list">
 		<li>is user-friendly and designed for public transit planners with minimal technical experience,</li>
 		<li>provides vulnerability analysis,</li>
 		<li>generates <a href="https://en.wikipedia.org/wiki/Isochrone_map" target="_blank" class="colored-link">isochrone maps</a>,</li>
-		<li>correlates public transit data with nearby business information, and</li>
+		<li>correlates public transit data with nearby business information and</li>
 		<li>is free!</li>
 	</ul>
 	<div class="w3-center">
@@ -54,7 +54,7 @@
 		<p class="image-description">Results of basic network analysis on the Caltrain PTN</p>
 	</div>
 	<p>
-		One of the limits of our directed graph model, however, is that it does not convey any geographic or spatial meaning. To remedy this issue, Transitcat also provides a nice visualization of a PTN's stops and lines using the Google Maps API. From here users can take advantage of one of our application's most powerful features: the ability to generate isochrone maps. Basically, we let users drop a pin anywhere on the map to indicate a starting point. We then utilize the previously mentioned Transitland API as well as some clever algorithm magic to figure out how far a rider can travel from that point within 10, 20, and 30 minutes using any combination of walking and public transit. Users can also tweak both the day of the week and time of the day (e.g., Wednesday at 5pm) to see how the isochrones change over time.
+		One of the limits of our directed graph model, however, is that it does not convey any geographic or spatial meaning. To remedy this issue, Transitcat also provides a nice visualization of a PTN's stops and lines using the Google Maps API. From here users can take advantage of one of our application's most powerful features: the ability to generate isochrone maps. Basically, we let users drop a pin anywhere on the map to indicate a starting point. We then utilize the previously mentioned Transitland API as well as some clever algorithm magic to figure out how far a rider can travel from that point within 10, 20 and 30 minutes using any combination of walking and public transit. Users can also tweak both the day of the week and time of the day (e.g., Wednesday at 5pm) to see how the isochrones change over time.
 	</p>
 	<div class="w3-center">
 		<img class="image-40 w3-round-large" src="assets/transitcat_google_maps_view.png">
@@ -62,7 +62,7 @@
 	</div>
 	<div class="w3-center">
 		<img class="image-40 w3-round-large" src="assets/transitcat_isochrones.png">
-		<p class="image-description">Isochrone analysis starting near the Millbrae BART station at Wednesday at 5pm</p>
+		<p class="image-description">Isochrone analysis starting near the Millbrae BART station on Wednesday at 5pm</p>
 	</div>
 	<p>
 		As an added bonus, users can search within these isochrones for nearby businesses, which provides a quick metric for evaluating the equity of a PTN. For instance, a public transit planner might be interested in knowing how many grocery stores or banks are within walking distance of a particular stop. Or they simply might want to know how many Thai restaurants are in the area 😋. Either way, Transitcat seamlessly correlates public transit data with business information (available via the Yelp API), which is a feature that several of our needfinding contacts suggested.
@@ -82,7 +82,7 @@
 		<p class="image-description">A sample criticality calculation between the Palo Alto and California Ave. Caltrain stations</p>
 	</div>
 	<p>
-		Overall my teammates and I were extremely pleased with how Transitcat turned out. Besides learning new technologies and gaining experience working on a self-initiated team software project, we were also able to create something that has merit beyond the classroom and that we believe can make a real difference for public transit planners. Although we currently don't have the time to continue active development of Transitcat, we have made all of the source code <a href="https://github.com/aaronaquino/transitcat" target="_blank" class="colored-link">publicly available</a> on Github. We've included <a href="https://github.com/aaronaquino/transitcat/blob/master/README.md#getting-transitcat-running" target="_blank" class="colored-link">instructions</a> for getting the application up and running locally on your machine; we encourage you to play around with it, extend it or even use it a jumping-off point for future <a href="https://github.com/CUTR-at-USF/awesome-transit#gtfs" target="_blank" class="colored-link">GTFS-related applications</a>!
+		Overall my teammates and I were extremely pleased with how Transitcat turned out. Besides learning new technologies and gaining experience working on a self-initiated team software project, we were also able to create something that has practical applications beyond the classroom and that we believe can make a real difference for public transit planners. Although we currently don't have the time to continue active development of Transitcat, we have made all of the source code <a href="https://github.com/aaronaquino/transitcat" target="_blank" class="colored-link">publicly available</a> on Github. We've included <a href="https://github.com/aaronaquino/transitcat/blob/master/README.md#getting-transitcat-running" target="_blank" class="colored-link">instructions</a> for getting the application up and running locally on your machine; we encourage you to play around with it, extend it or even use it as a jumping-off point for future <a href="https://github.com/CUTR-at-USF/awesome-transit#gtfs" target="_blank" class="colored-link">GTFS-related applications</a>!
 	</p>
 </div>
 
