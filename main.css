@@ -3,7 +3,8 @@
  */
 
 hr.section-divider {
-	min-width: 45px;
+	width: 8%;
+	margin:20px 46%;
 }
 
 #bio-long-text {
@@ -110,7 +111,7 @@ hr.section-divider {
 }
 
 .image-50, .image-40, .image-35 {
-	min-width: 320px;
+	min-width: 295px;
 }
 
 .image-50 {
@@ -146,7 +147,7 @@ hr.section-divider {
 
 .responsive-vertical-rectangle {
 	max-width: 275px;
-	width: 22vw;
+	width: 50vw;
 }
 
 
