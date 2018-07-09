@@ -276,3 +276,16 @@ hr.section-divider {
 	background-color: #f1cfb1 !important;
 	color:#000 !important;
 }
+
+/**
+ * Creative rules.
+ */
+
+#digital-art-container {
+	background-color: #6185a9 !important;
+	color: #fff !important;
+}
+
+hr.artwork-separator {
+	margin: 30px 40%;
+}
