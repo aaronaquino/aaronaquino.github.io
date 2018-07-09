@@ -36,48 +36,47 @@
 		<li>is free!</li>
 	</ul>
 	<div class="w3-center">
-		<img class="image-40 w3-round-large" src="assets/transitcat_home.png">
+		<img class="image-60 w3-round-large" src="assets/transitcat_home.png">
 		<p class="image-description">The Transitcat home page</p>
 	</div>
 	<p>
-		At the core of Transitcat is <a href="https://developers.google.com/transit/gtfs/" target="_blank" class="colored-link">GTFS</a>, which is a common format for public transportation schedules and associated geographic information. Specifically, GTFS is a series of text files (often zipped together) that a public transit agency publishes online for developers (like us!) to use to build cool applications. <a href="https://transit.land" target="_blank" class="colored-link">Transitland</a> (which partially inspired the name of our application) has an excellent <a href="https://transit.land/feed-registry" target="_blank" class="colored-link">Feed Registry</a> for finding which GTFS feeds are available. It also provides an excellent <a href="https://transit.land/documentation/datastore/api-endpoints.html" target="_blank" class="colored-link">API</a> for querying GTFS information in a precise yet efficient manner; more on this later!
+		At the core of Transitcat is <a href="https://developers.google.com/transit/gtfs/" target="_blank" class="colored-link">GTFS</a>, which is a common format for public transportation schedules and associated geographic information. Specifically, GTFS is a series of text files (often zipped together) that a public transit agency publishes online for developers (like us!) to use to build cool applications. <a href="https://transit.land" target="_blank" class="colored-link">Transitland</a> (which partially inspired the name of our project) has an up-to-date <a href="https://transit.land/feed-registry" target="_blank" class="colored-link">Feed Registry</a> for discovering available GTFS feeds. It also provides an excellent <a href="https://transit.land/documentation/datastore/api-endpoints.html" target="_blank" class="colored-link">API</a> for querying GTFS information in a precise yet efficient manner; Transitcat relies extensively on this service in order to make vulnerability and isochrone calculations. More on this later!
 	</p>
 	<p>
-		As noted in the architecture diagram below, Transitcat relies on several other technologies, including:
+		As noted in the architecture diagram below, in addition to Transitland, Transitcat relies on a few other technologies, including:
 	</p>
 	<ul class="transitcat-list">
-		<li>Transitland, for fetching GTFS data in order to make vulnerability and isochrone calculations;</li>
 		<li><a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank" class="colored-link">Google Maps</a>, for visualizing stops, routes, and isochrones;</li>
 		<li><a href="https://www.yelp.com/fusion" target="_blank" class="colored-link">Yelp</a>, for querying nearby business information; and</li>
 		<li><a href="https://snap.stanford.edu/snappy/" target="_blank" class="colored-link">SNAP</a>, a powerful graph library for modeling PTNs as computer science graphs.</li>
 	</ul>
 	<div class="w3-center">
-		<img class="image-40 w3-round-large image-outline" src="assets/architecture_diagram.png">
+		<img class="image-60 w3-round-large image-outline" src="assets/architecture_diagram.png">
 		<p class="image-description">A high-level architecture diagram explaining the technologies we use in our app</p>
 	</div>
 	<p>
 		A Transitcat user begins by uploading a GTFS zip file for a particular public transit network (PTN), such as <a href="https://transit.land/feed-registry/operators/o-9q9-caltrain" target="_blank" class="colored-link">Caltrain</a> or the <a href="https://transit.land/feed-registry/operators/o-dr5r-nyct" target="_blank" class="colored-link">New York subway</a>. We then feed this data into SNAP to build a <a href="https://en.wikipedia.org/wiki/Directed_graph" target="_blank" class="colored-link">directed graph</a> that models the PTN; each stop is represented as a node, and two nodes share an edge if they represent consecutive stops on the same transit line. At this point we provide the user with some helpful graph stats (e.g., the number of nodes/edges and the average <a href="https://en.wikipedia.org/wiki/Degree_(graph_theory)" target="_blank" class="colored-link">node degree</a>) as well as allow them to merge their network with other PTNs. This merging feature is particularly useful as it allows users to build aggregate PTNs from multiple transit types, which in turn empowers them to conduct more thorough and real-world analyses, such as examining how Caltrain, BART, and Muni work together for riders in the Bay Area.
 	</p>
 	<div class="w3-center">
-		<img class="image-40 w3-round-large" src="assets/transitcat_graph_model.png">
+		<img class="image-60 w3-round-large" src="assets/transitcat_graph_model.png">
 		<p class="image-description">Results of basic network analysis on the Caltrain PTN</p>
 	</div>
 	<p>
-		One of the limits of our directed graph model, however, is that it does not convey any geographic or spatial meaning. To remedy this issue, Transitcat also provides a nice visualization of a PTN's stops and lines using the Google Maps API. From here users can take advantage of one of our application's most powerful features: the ability to generate isochrone maps. Basically, we let users drop a pin anywhere on the map to indicate a starting point. We then utilize the previously mentioned Transitland API as well as some clever algorithm magic to figure out how far a rider can travel from that point within 10, 20, and 30 minutes using any combination of walking and public transit. The reachable areas for these three different time windows are represented by the red circles of increasing radius shown on the map. Users can also tweak both the day of the week and time of the day (e.g., Wednesday at 5pm) to see how the isochrones change over time.
+		One of the limits of our directed graph model, however, is that it does not convey any geographic or spatial meaning. To remedy this issue, Transitcat also provides a nice visualization of a PTN's stops and lines using the Google Maps API. From here users can take advantage of one of our application's most powerful features: the ability to generate <a href="https://en.wikipedia.org/wiki/Isochrone_map" target="_blank" class="colored-link">isochrone maps</a>. Basically, we let users drop a pin anywhere on the map to indicate a starting point. We then utilize the previously mentioned Transitland API as well as some clever algorithm magic to figure out how far a rider can travel from that point within 10, 20, and 30 minutes using any combination of walking and public transit. The reachable areas for these three different time windows are represented by the red circles of increasing radius shown on the map. Users can also tweak both the day of the week and time of the day (e.g., Wednesday at 5pm) to see how the isochrones change over time.
 	</p>
 	<div class="w3-center">
-		<img class="image-40 w3-round-large" src="assets/transitcat_google_maps_view.png">
-		<p class="image-description">Visualization of the aggregate Caltrain + BART network</p>
+		<img class="image-60 w3-round-large" src="assets/transitcat_google_maps_view.png">
+		<p class="image-description">The aggregate Caltrain + BART network, with 10-, 20-, and 30-minute isochrones in red</p>
 	</div>
 	<div class="w3-center">
-		<img class="image-40 w3-round-large" src="assets/transitcat_isochrones.png">
+		<img class="image-60 w3-round-large" src="assets/transitcat_isochrones.png">
 		<p class="image-description">Isochrone analysis starting near the Millbrae BART station on Wednesday at 5pm</p>
 	</div>
 	<p>
 		As an added bonus, users can search within these isochrones for nearby businesses, which provides a quick metric for evaluating the equity of a PTN. For instance, a public transit planner might be interested in knowing how many grocery stores or banks are within walking distance of a particular stop. Or they simply might want to know how many Thai restaurants are in the area 😋. Either way, Transitcat seamlessly correlates public transit data with business information (available via the Yelp API), which is a feature that several of our needfinding contacts suggested.
 	</p>
 	<div class="w3-center">
-		<img class="image-40 w3-round-large" src="assets/transitcat_yelp.png">
+		<img class="image-60 w3-round-large" src="assets/transitcat_yelp.png">
 		<p class="image-description">Results of querying for &ldquo;groceries&rdquo; within the above isochrones</p>
 	</div>
 	<p>
@@ -87,7 +86,7 @@
 		To aid with this sort of analysis Transitcat allows users to select a connection between two stops in a PTN. Our app then determines how much the average travel time across the network would increase if that particular connection was removed, which is called the criticality of that edge. Although there are some limitations to this calculation (e.g., Transitcat makes the unrealistic assumption that all lines are running at all times of the day), criticality does provide a convenient baseline for measuring the relative importance of different connections in a PTN, which can be a nice starting point for helping public transit planners determine where to modify service frequency or implement new stops.
 	</p>
 	<div class="w3-center">
-		<img class="image-40 w3-round-large" src="assets/transitcat_criticality.png">
+		<img class="image-60 w3-round-large" src="assets/transitcat_criticality.png">
 		<p class="image-description">A sample criticality calculation between the Palo Alto and California Ave. Caltrain stations</p>
 	</div>
 	<p>
