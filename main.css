@@ -281,9 +281,15 @@ hr.section-divider {
 	color:#000 !important;
 }
 
+
 /**
  * Creative rules.
  */
+
+#one-second-container {
+	background-color: #397521ab !important;
+	color: #000 !important;
+}
 
 #digital-art-container {
 	background-color: #6185a9 !important;
