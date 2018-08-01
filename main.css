@@ -135,7 +135,7 @@ hr.section-divider {
 }
 
 .responsive-square {
-	max-width: 230px;
+	max-width: 260px;
 	width: 70vw;
 }
 
@@ -252,12 +252,12 @@ hr.section-divider {
 }
 
 #spcsi-container {
-	background-color: #b37262 !important;
-	color:#fff !important;
+	background-color: #ea5455cf !important;
+	color:#000 !important;
 }
 
 #eagle-scout-container {
-	background-color: #d0dbe9 !important;
+	background-color: #91ceff !important;
 	color:#000 !important;
 }
 
@@ -265,11 +265,6 @@ hr.section-divider {
 /**
  * Dancer rules.
  */
-
-#common-origins-container {
-	background-color: #fbb392 !important;
-	color:#000 !important;
-}
 
 #legacy-container {
 	background-color: #89beea !important;
@@ -281,13 +276,18 @@ hr.section-divider {
 	color:#000 !important;
 }
 
+#common-origins-container {
+	background-color: #ffa96a !important;
+	color:#000 !important;
+}
+
 
 /**
  * Creative rules.
  */
 
 #one-second-container {
-	background-color: #397521ab !important;
+	background-color: #83b271 !important;
 	color: #000 !important;
 }
 
