@@ -105,6 +105,10 @@ hr.section-divider {
  * Image utilities.
  */
 
+img {
+	max-width: 100%;
+}
+
 .image-outline {
 	padding: 1px;
     border: 1px solid black;
