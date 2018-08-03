@@ -36,13 +36,9 @@ hr.section-divider {
     margin: 80px 0px 0px;
 }
 
-#profile-picture {
-	max-width: 18vw;
-	min-width: 150px;
-}
-
 #profile-picture-container {
 	padding-top: 40px;
+	padding-bottom: 16px;
 }
 
 #social-media-message-text {
