@@ -36,7 +36,11 @@
 		<li>is free!</li>
 	</ul>
 	<div class="w3-center">
-		<img class="image-60 w3-round-large" src="assets/transitcat_home.png">
+		<img class="w3-round-large"
+			 src="assets/transitcat_home_2000.png"
+			 srcset="assets/transitcat_home_200.png 200w, assets/transitcat_home_400.png 400w, assets/transitcat_home_800.png 800w, assets/transitcat_home_1000.png 1000w, assets/transitcat_home_2000.png 2000w"
+			 sizes="(min-width: 650px) 70vw, (min-width: 500px) 75vw, 80vw"
+			 alt="">
 		<p class="image-description">The Transitcat home page</p>
 	</div>
 	<p>
@@ -51,32 +55,52 @@
 		<li><a href="https://snap.stanford.edu/snappy/" target="_blank" class="colored-link">SNAP</a>, a powerful graph library for modeling public transit networks as computer science graphs.</li>
 	</ul>
 	<div class="w3-center">
-		<img class="image-60 w3-round-large image-outline" src="assets/architecture_diagram.png">
+		<img class="w3-round-large image-outline"
+			 src="assets/architecture_diagram_960.png"
+			 srcset="assets/architecture_diagram_200.png 200w, assets/architecture_diagram_400.png 400w, assets/architecture_diagram_800.png 800w, assets/architecture_diagram_960.png 960w"
+			 sizes="(min-width: 650px) 60vw, (min-width: 500px) 75vw, 80vw"
+			 alt="">
 		<p class="image-description">A high-level architecture diagram explaining the technologies we use in our app</p>
 	</div>
 	<p>
 		A Transitcat user begins by uploading a GTFS zip file for a particular public transit network (PTN), such as <a href="https://transit.land/feed-registry/operators/o-9q9-caltrain" target="_blank" class="colored-link">Caltrain</a> or the <a href="https://transit.land/feed-registry/operators/o-dr5r-nyct" target="_blank" class="colored-link">New York subway</a>. We then feed this data into SNAP to build a <a href="https://en.wikipedia.org/wiki/Directed_graph" target="_blank" class="colored-link">directed graph</a> that models the PTN; each stop is represented as a node, and two nodes share an edge if they represent consecutive stops on the same transit line. At this point we provide the user with some helpful graph stats (e.g., the number of nodes/edges and the average <a href="https://en.wikipedia.org/wiki/Degree_(graph_theory)" target="_blank" class="colored-link">node degree</a>) as well as allow them to merge their network with other PTNs. This merging feature is particularly useful as it allows users to build aggregate PTNs from multiple transit types, which in turn empowers them to conduct more thorough and real-world analyses, such as examining how Caltrain, BART, and Muni work together for riders in the Bay Area.
 	</p>
 	<div class="w3-center">
-		<img class="image-60 w3-round-large" src="assets/transitcat_graph_model.png">
+		<img class="w3-round-large"
+			 src="assets/transitcat_graph_model_2000.png"
+			 srcset="assets/transitcat_graph_model_200.png 200w, assets/transitcat_graph_model_400.png 400w, assets/transitcat_graph_model_800.png 800w, assets/transitcat_graph_model_1000.png 1000w, assets/transitcat_graph_model_2000.png 2000w"
+			 sizes="(min-width: 650px) 70vw, (min-width: 500px) 75vw, 80vw"
+			 alt="">
 		<p class="image-description">Results of basic network analysis on the Caltrain PTN</p>
 	</div>
 	<p>
 		One of the limits of our directed graph model, however, is that it does not convey any geographic or spatial meaning. To remedy this issue, Transitcat also provides a nice visualization of a PTN's stops and lines using the Google Maps API. From here users can take advantage of one of our application's most powerful features: the ability to generate <a href="https://en.wikipedia.org/wiki/Isochrone_map" target="_blank" class="colored-link">isochrone maps</a>. Basically, we let users drop a pin anywhere on the map to indicate a starting point. We then utilize the previously mentioned Transitland API as well as some clever algorithm magic to figure out how far a rider can travel from that point within 10, 20, and 30 minutes using any combination of walking and public transit. The reachable areas for these three different time windows are represented by the red circles of increasing radius shown on the map. Users can also tweak both the day of the week and time of the day (e.g., Wednesday at 5pm) to see how the isochrones change over time.
 	</p>
 	<div class="w3-center">
-		<img class="image-60 w3-round-large" src="assets/transitcat_google_maps_view.png">
+		<img class="w3-round-large"
+			 src="assets/transitcat_google_maps_view_2000.png"
+			 srcset="assets/transitcat_google_maps_view_200.png 200w, assets/transitcat_google_maps_view_400.png 400w, assets/transitcat_google_maps_view_800.png 800w, assets/transitcat_google_maps_view_1000.png 1000w, assets/transitcat_google_maps_view_2000.png 2000w"
+			 sizes="(min-width: 650px) 70vw, (min-width: 500px) 75vw, 80vw"
+			 alt="">
 		<p class="image-description">The aggregate Caltrain + BART network, with 10-, 20-, and 30-minute isochrones in red</p>
 	</div>
 	<div class="w3-center">
-		<img class="image-60 w3-round-large" src="assets/transitcat_isochrones.png">
+		<img class="w3-round-large"
+			 src="assets/transitcat_isochrones_2000.png"
+			 srcset="assets/transitcat_isochrones_200.png 200w, assets/transitcat_isochrones_400.png 400w, assets/transitcat_isochrones_800.png 800w, assets/transitcat_isochrones_1000.png 1000w, assets/transitcat_isochrones_2000.png 2000w"
+			 sizes="(min-width: 650px) 70vw, (min-width: 500px) 75vw, 80vw"
+			 alt="">
 		<p class="image-description">Isochrone analysis starting near the Millbrae BART station on Wednesday at 5pm</p>
 	</div>
 	<p>
 		As an added bonus, users can search within these isochrones for nearby businesses, which provides a quick metric for evaluating the equity of a PTN. For instance, a public transit planner might be interested in knowing how many grocery stores or banks are within walking distance of a particular stop. Or they simply might want to know how many Thai restaurants are in the area 😋. Either way, Transitcat seamlessly correlates public transit data with business information (available via the Yelp API), which is a feature that several of our needfinding contacts suggested.
 	</p>
 	<div class="w3-center">
-		<img class="image-60 w3-round-large" src="assets/transitcat_yelp.png">
+		<img class="w3-round-large"
+			 src="assets/transitcat_yelp_2000.png"
+			 srcset="assets/transitcat_yelp_200.png 200w, assets/transitcat_yelp_400.png 400w, assets/transitcat_yelp_800.png 800w, assets/transitcat_yelp_1000.png 1000w, assets/transitcat_yelp_2000.png 2000w"
+			 sizes="(min-width: 650px) 70vw, (min-width: 500px) 75vw, 80vw"
+			 alt="">
 		<p class="image-description">Results of querying for &ldquo;groceries&rdquo; within the above isochrones</p>
 	</div>
 	<p>
@@ -86,7 +110,11 @@
 		To aid with this sort of analysis Transitcat allows users to select a connection between two stops in a PTN. Our app then determines how much the average travel time across the network would increase if that particular connection was removed, which is called the criticality of that edge. Although there are some limitations to this calculation (e.g., Transitcat makes the unrealistic assumption that all lines are running at all times of the day), criticality does provide a convenient baseline for measuring the relative importance of different connections in a PTN, which can be a nice starting point for helping public transit planners determine where to modify service frequency or implement new stops.
 	</p>
 	<div class="w3-center">
-		<img class="image-60 w3-round-large" src="assets/transitcat_criticality.png">
+		<img class="w3-round-large"
+			 src="assets/transitcat_criticality_2000.png"
+			 srcset="assets/transitcat_criticality_200.png 200w, assets/transitcat_criticality_400.png 400w, assets/transitcat_criticality_800.png 800w, assets/transitcat_criticality_1000.png 1000w, assets/transitcat_criticality_2000.png 2000w"
+			 sizes="(min-width: 650px) 70vw, (min-width: 500px) 75vw, 80vw"
+			 alt="">
 		<p class="image-description">A sample criticality calculation between the Palo Alto and California Ave. Caltrain stations</p>
 	</div>
 	<p>
