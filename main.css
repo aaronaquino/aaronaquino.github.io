@@ -23,6 +23,16 @@
 	font-size: 24px;
 }
 
+.secondary-caption {
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+	.secondary-caption {
+		font-size: 22px;
+	}
+}
+
 .youtube-container {
 	position:relative;
 	padding-bottom:56.25%;
