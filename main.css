@@ -19,11 +19,11 @@ hr.section-divider {
 #down-arrow {
 	cursor: pointer;
 	cursor: hand;
-	max-width: 10vw;
 }
 
 #down-arrow-container {
-	margin-bottom: 20px;
+	width: 52px;
+	margin: 0px auto 20px auto;
 }
 
 #homepage-name {
@@ -122,6 +122,10 @@ hr.section-divider {
 
 img {
 	max-width: 100%;
+}
+
+img[src$=".svg"] {
+	width: 100%;
 }
 
 .image-outline {
@@ -280,7 +284,8 @@ img {
 }
 
 #app-store-badge-container {
-	margin-top: 32px;
+	margin: 32px auto 0px auto;
+	width: 130px;
 }
 
 #app-store-badge {
