@@ -27,13 +27,42 @@ hr.section-divider {
 }
 
 #homepage-name {
-	margin-top: 50px;
-	min-width: 250px;
-	max-width: 30vw;
+	margin: 0px auto;
+	width: 70vw;
 }
 
-#names {
-    margin: 80px 0px 0px;
+@media only screen and (min-width: 600px) {
+	#homepage-name {
+		width: 60vw;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	#homepage-name {
+		width: 50vw;
+	}
+}
+
+@media only screen and (min-width: 850px) {
+	#homepage-name {
+		width: 40vw;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#homepage-name {
+		width: 35vw;
+	}
+}
+
+#homepage-splash {
+	margin-top: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+	#homepage-splash {
+		margin-top: 50px;
+	}
 }
 
 #profile-picture-container {
@@ -72,12 +101,18 @@ hr.section-divider {
 }
 
 .role-title {
-	font-size: 7em;
+	font-size: 84px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 700px) {
   .role-title {
-    font-size: calc(4vw + 4vh + 2vmin);
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .role-title {
+    font-size: 108px;
   }
 }
 
@@ -110,48 +145,8 @@ img {
     border: 1px solid black;
 }
 
-.image-60, .image-50, .image-40, .image-35 {
-	min-width: 295px;
-}
-
-.image-60 {
-	width: 60vw;
-}
-
-.image-50 {
-	width: 50vw;
-}
-
-.image-40 {
-	width: 40vw;
-}
-
-.image-35 {
-	width: 35vw;
-}
-
 .image-description {
 	font-weight: 400;
-}
-
-.responsive-square {
-	max-width: 260px;
-	width: 70vw;
-}
-
-.responsive-rectangle {
-	max-width: 375px;
-	width: 70vw;
-}
-
-.responsive-skinny-rectangle {
-	max-width: 450px;
-	width: 70vw;
-}
-
-.responsive-vertical-rectangle {
-	max-width: 275px;
-	width: 50vw;
 }
 
 
@@ -183,13 +178,25 @@ img {
 }
 
 .experience-title {
-	font-size: 7em;
+	font-size: 64px;
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 500px) {
   .experience-title {
-    font-size: calc(4vw + 4vh + 2vmin);
+    font-size: 82px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .experience-title {
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .experience-title {
+    font-size: 108px;
   }
 }
 
