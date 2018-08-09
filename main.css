@@ -100,22 +100,6 @@ hr.section-divider {
 	font-size: 24px;
 }
 
-.role-title {
-	font-size: 84px;
-}
-
-@media screen and (min-width: 700px) {
-  .role-title {
-    font-size: 96px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .role-title {
-    font-size: 108px;
-  }
-}
-
 .youtube-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -147,6 +131,67 @@ img {
 
 .image-description {
 	font-weight: 400;
+}
+
+.role-title-container {
+	margin: 40px auto;
+	width: 70vw;
+}
+
+.role-title-container#connector-title-container {
+	width: 75vw;
+}
+
+@media screen and (min-width: 500px) {
+	.role-title-container {
+		width: 60vw;
+	}
+
+	.role-title-container#connector-title-container {
+		width: 70vw;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.role-title-container {
+		width: 45vw;
+	}
+
+	.role-title-container#connector-title-container {
+		width: 60vw;
+	}
+
+	.role-title-container#creative-title-container {
+		width: 50vw;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.role-title-container {
+		width: 38vw;
+	}
+
+	.role-title-container#connector-title-container {
+		width: 53vw;
+	}
+
+	.role-title-container#creative-title-container {
+		width: 43vw;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.role-title-container {
+		width: 30vw;
+	}
+
+	.role-title-container#connector-title-container {
+		width: 45vw;
+	}
+
+	.role-title-container#creative-title-container {
+		width: 35vw;
+	}
 }
 
 
