@@ -1,0 +1,131 @@
+/**
+ * Homepage-specific rules.
+ */
+
+hr.section-divider {
+	width: 8%;
+	margin:20px 46%;
+}
+
+#bio-long-text {
+	font-size: 16px;
+}
+
+#bio-one-line {
+	font-size: 22px;
+	margin: 30px 0px 20px;
+}
+
+#down-arrow {
+	cursor: pointer;
+	cursor: hand;
+}
+
+#down-arrow-container {
+	width: 52px;
+	margin: 0px auto 20px auto;
+}
+
+#homepage-name {
+	margin: 0px auto;
+	width: 70vw;
+}
+
+@media only screen and (min-width: 600px) {
+	#homepage-name {
+		width: 60vw;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	#homepage-name {
+		width: 50vw;
+	}
+}
+
+@media only screen and (min-width: 850px) {
+	#homepage-name {
+		width: 40vw;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#homepage-name {
+		width: 35vw;
+	}
+}
+
+#homepage-splash {
+	margin-top: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+	#homepage-splash {
+		margin-top: 50px;
+	}
+}
+
+#profile-picture-container {
+	padding-top: 40px;
+	padding-bottom: 16px;
+}
+
+#social-media-message-text {
+	font-size: 22px;
+}
+
+
+/**
+ * Formatting utilities.
+ */
+
+.colored-link {
+	color: #0d47a1!important;
+	text-decoration: none; /* removes underlines */
+}
+
+.link-no-underline {
+	text-decoration: none; /* removes underlines */
+}
+
+
+/**
+ * Image utilities.
+ */
+
+img {
+	max-width: 100%;
+}
+
+img[src$=".svg"] {
+	width: 100%;
+}
+
+.image-outline {
+	padding: 1px;
+    border: 1px solid black;
+}
+
+.image-description {
+	font-weight: 400;
+}
+
+
+/**
+ * Social icons and footer formatting.
+ */
+
+#social-icons a:hover {
+	border-bottom:3px solid #0d47a1;
+}
+
+#logo {
+	cursor: pointer;
+	max-height: 42px;
+}
+
+.copyright-text {
+	font-size: 1em;
+	font-weight: 400;
+}
+
