@@ -2,50 +2,21 @@
  * Formatting utilities.
  */
 
-#choreo-top-row {
-	padding-top: 16px;
-}
-
 .colored-link {
 	color: #0d47a1!important;
-	text-decoration: none; /* removes underlines */
+	text-decoration: none; /* Removes underlines. */
 }
 
 .link-no-underline {
-	text-decoration: none; /* removes underlines */
+	text-decoration: none; /* Removes underlines. */
 }
 
 .more-info-button {
 	margin-top: 24px;
 }
 
-.role-description {
-	font-size: 24px;
-}
-
 .secondary-caption {
-	font-size: 20px;
-}
-
-@media only screen and (min-width: 600px) {
-	.secondary-caption {
-		font-size: 22px;
-	}
-}
-
-.youtube-container {
-	position:relative;
-	padding-bottom:56.25%;
-	height:0;
-	overflow:hidden;
-}
-
-.youtube-container iframe {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+	font-size: 1.5em;
 }
 
 
@@ -57,7 +28,7 @@ img {
 	max-width: 100%;
 }
 
-img[src$=".svg"] {
+img[src$=".svg"] { /* For IE compatibility. */
 	width: 100%;
 }
 
@@ -72,7 +43,7 @@ img[src$=".svg"] {
 
 .role-title-container {
 	margin: 40px auto;
-	width: 70vw;
+	width: 60vw;
 }
 
 .role-title-container#connector-title-container {
@@ -81,17 +52,17 @@ img[src$=".svg"] {
 
 @media screen and (min-width: 500px) {
 	.role-title-container {
-		width: 60vw;
+		width: 45vw;
 	}
 
 	.role-title-container#connector-title-container {
-		width: 70vw;
+		width: 67vw;
 	}
 }
 
 @media screen and (min-width: 650px) {
 	.role-title-container {
-		width: 45vw;
+		width: 40vw;
 	}
 
 	.role-title-container#connector-title-container {
@@ -99,13 +70,13 @@ img[src$=".svg"] {
 	}
 
 	.role-title-container#creative-title-container {
-		width: 50vw;
+		width: 45vw;
 	}
 }
 
 @media screen and (min-width: 850px) {
 	.role-title-container {
-		width: 38vw;
+		width: 35vw;
 	}
 
 	.role-title-container#connector-title-container {
@@ -113,7 +84,7 @@ img[src$=".svg"] {
 	}
 
 	.role-title-container#creative-title-container {
-		width: 43vw;
+		width: 40vw;
 	}
 }
 
@@ -160,30 +131,8 @@ img[src$=".svg"] {
 }
 
 .experience-title {
-	font-size: 64px;
+	font-size: 3.375em;
 	text-transform: uppercase;
-}
-
-@media screen and (min-width: 500px) {
-  .experience-title {
-    font-size: 82px;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .experience-title {
-    font-size: 96px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .experience-title {
-    font-size: 108px;
-  }
-}
-
-.experience-location {
-	font-size: 24px;
 }
 
 
@@ -269,6 +218,25 @@ img[src$=".svg"] {
 #common-origins-container {
 	background-color: #ffa96a !important;
 	color:#000 !important;
+}
+
+#choreo-top-row {
+	padding-top: 16px;
+}
+
+.youtube-container {
+	position:relative;
+	padding-bottom:56.25%;
+	height:0;
+	overflow:hidden;
+}
+
+.youtube-container iframe {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }
 
 

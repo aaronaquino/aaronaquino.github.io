@@ -77,21 +77,15 @@ hr.section-divider {
 
 .colored-link {
 	color: #0d47a1!important;
-	text-decoration: none; /* removes underlines */
+	text-decoration: none; /* Removes underlines. */
 }
 
 .link-no-underline {
-	text-decoration: none; /* removes underlines */
+	text-decoration: none; /* Removes underlines. */
 }
 
 .secondary-caption {
-	font-size: 20px;
-}
-
-@media only screen and (min-width: 600px) {
-	.secondary-caption {
-		font-size: 22px;
-	}
+	font-size: 1.5em;
 }
 
 
