@@ -104,21 +104,17 @@ img[src$=".svg"] { /* For IE compatibility. */
 
 
 /**
- * Social icons and footer formatting.
+ * Navigation bar and footer formatting.
  */
 
-#social-icons a:hover {
-	border-bottom:3px solid #0d47a1;
+.copyright-text {
+	font-size: 1em;
+	font-weight: 400;
 }
 
 #logo {
 	cursor: pointer;
 	max-height: 42px;
-}
-
-.copyright-text {
-	font-size: 1em;
-	font-weight: 400;
 }
 
 

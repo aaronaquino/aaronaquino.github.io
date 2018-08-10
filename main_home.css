@@ -65,6 +65,13 @@ hr.section-divider {
 	padding-bottom: 16px;
 }
 
+#social-icons {
+	padding-top: 10px;
+}
+
+#social-icons a:hover {
+	border-bottom:3px solid #0d47a1;
+}
 
 #social-media-message {
 	margin: 0px 10px;
@@ -101,35 +108,17 @@ img[src$=".svg"] {
 	width: 100%;
 }
 
-.image-outline {
-	padding: 1px;
-    border: 1px solid black;
-}
-
-.image-description {
-	font-weight: 400;
-}
-
 
 /**
- * Social icons and footer formatting.
+ * Navigation bar and footer formatting.
  */
-
-#social-icons {
-	padding-top: 10px;
-}
-
-#social-icons a:hover {
-	border-bottom:3px solid #0d47a1;
-}
-
-#logo {
-	cursor: pointer;
-	max-height: 42px;
-}
 
 .copyright-text {
 	font-size: 1em;
 	font-weight: 400;
 }
 
+#logo {
+	cursor: pointer;
+	max-height: 42px;
+}
