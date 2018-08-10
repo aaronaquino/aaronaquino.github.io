@@ -172,6 +172,12 @@ Show the link that contains the hamburger icon. */
 	text-transform: uppercase;
 }
 
+@media screen and (min-width: 700px) {
+	.experience-title {
+		font-size: 5.063em;
+	}
+}
+
 
 /**
  * Hacker rules.
