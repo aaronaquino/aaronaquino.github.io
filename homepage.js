@@ -9,6 +9,7 @@ $(document).ready(function (){
     });
 });
 
+
 /**
  * Adds the social media icons. The spaces after each </a> tag are necessary to create space between the icons.
  */

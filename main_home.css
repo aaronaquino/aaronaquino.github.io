@@ -120,5 +120,47 @@ img[src$=".svg"] {
 
 #logo {
 	cursor: pointer;
-	max-height: 42px;
+	max-height: 40px;
+}
+
+.topnav {
+	margin: 0px 8px;
+}
+
+.topnav a {
+	padding: 8px 8px;
+	text-decoration: none;
+}
+
+.topnav .hamburger-icon {
+	display: none;
+}
+
+/* When the screen is less than 620 pixels wide, hide all links, except for those with the "mobile-nav" class.
+Show the link that contains the hamburger icon. */
+@media screen and (max-width: 620px) {
+	.topnav a:not(.mobile-nav) {
+		display: none;
+	}
+	.topnav .hamburger-icon {
+		float: right;
+		display: block;
+	}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. */
+@media screen and (max-width: 620px) {
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive a.hamburger-icon {
+		position: absolute;
+		right: 0;
+		top: 8px;
+	}
+	.topnav.responsive a {
+		float: none!important;
+		display: block;
+		text-align: center;
+	}
 }
