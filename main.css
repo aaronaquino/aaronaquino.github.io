@@ -19,6 +19,37 @@
 	font-size: 1.5em;
 }
 
+.youtube-container, .single-youtube {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 ratio. */
+	height: 0;
+	overflow: hidden;
+}
+
+.youtube-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 650px) {
+	.single-youtube {
+		left: 15%;
+		width: 70%;
+		padding-bottom: 39.375%; /* 16:9 ratio at 70% width. */
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.single-youtube {
+		left: 20%;
+		width: 60%;
+		padding-bottom: 33.75%; /* 16:9 ratio at 60% width. */
+	}
+}
+
 
 /**
  * Image utilities.
@@ -264,22 +295,7 @@ Show the link that contains the hamburger icon. */
 }
 
 #choreo-top-row {
-	padding-top: 16px;
-}
-
-.youtube-container {
-	position:relative;
-	padding-bottom:56.25%;
-	height:0;
-	overflow:hidden;
-}
-
-.youtube-container iframe {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+	padding: 16px 16px 0px 16px;
 }
 
 
