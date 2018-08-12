@@ -35,6 +35,7 @@ function toggleTopNav() {
 		topNav.classList.remove("responsive");
 		hamburgerButton.classList.remove("w3-text-theme-dark");
 		hamburgerButton.classList.add("w3-text-carbon");
+		hamburgerButton.blur();
 	}
 }
  
