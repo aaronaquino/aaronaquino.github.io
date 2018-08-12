@@ -12,7 +12,7 @@ document.getElementById("copyright-footer").innerHTML =
  */
 document.getElementById("menu").innerHTML = "<div id='myTopNav' class='w3-large w3-padding-8 topnav'>" +
 	"<a href='../index.html' class='mobile-nav'><img src='../assets/logo.png' alt='Logo' id='logo' class='w3-small'></a>" +
-	"<a href='javascript:void(0);' id='hamburgerButton' class='w3-right w3-text-carbon w3-hover-text-theme-dark hamburger-icon mobile-nav' onclick='toggleTopNav()'><i class='fa fa-bars'></i></a>" +
+	"<a href='javascript:void(0);' id='hamburgerButton' class='w3-right w3-text-carbon hamburger-icon mobile-nav' onclick='toggleTopNav()'><i class='fa fa-bars'></i></a>" +
 	"<a class='w3-right w3-hover-white w3-text-carbon w3-hover-text-theme-dark' href='../index.html'>ABOUT</a>" +
 	"<a class='w3-right w3-hover-white w3-text-carbon w3-hover-text-theme-dark' href='../creative.html'>CREATIVE</a>" +
 	"<a class='w3-right w3-hover-white w3-text-carbon w3-hover-text-theme-dark' href='../dancer.html'>DANCER</a>" +
@@ -35,6 +35,5 @@ function toggleTopNav() {
 		topNav.classList.remove("responsive");
 		hamburgerButton.classList.remove("w3-text-theme-dark");
 		hamburgerButton.classList.add("w3-text-carbon");
-		hamburgerButton.blur();
 	}
 }
