@@ -131,7 +131,7 @@ img[src$=".svg"] {
 	text-decoration: none;
 }
 
-.topnav .hamburger-icon {
+.topnav #hamburger-button {
 	display: none;
 }
 
@@ -141,7 +141,7 @@ Show the link that contains the hamburger icon. */
 	.topnav a:not(.mobile-nav) {
 		display: none;
 	}
-	.topnav .hamburger-icon {
+	.topnav #hamburger-button {
 		float: right;
 		display: block;
 	}
@@ -152,7 +152,7 @@ Show the link that contains the hamburger icon. */
 	.topnav.responsive {
 		position: relative;
 	}
-	.topnav.responsive a.hamburger-icon {
+	.topnav.responsive a#hamburger-button {
 		position: absolute;
 		right: 0;
 		top: 8px;

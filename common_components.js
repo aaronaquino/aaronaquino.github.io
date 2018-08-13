@@ -12,12 +12,12 @@ document.getElementById("copyright-footer").innerHTML =
  */
 document.getElementById("menu").innerHTML = "<div id='myTopNav' class='w3-large w3-padding-8 topnav'>" +
 	"<a href='/index.html' class='mobile-nav'><img src='/assets/logo.png' alt='Logo' id='logo' class='w3-small'></a>" +
-	"<a href='javascript:void(0);' id='hamburgerButton' class='w3-right w3-text-carbon hamburger-icon mobile-nav' onclick='toggleTopNav()'><i class='fa fa-bars'></i></a>" +
-	"<a class='w3-right w3-hover-white w3-text-carbon w3-hover-text-theme-dark' href='/index.html'>ABOUT</a>" +
-	"<a class='w3-right w3-hover-white w3-text-carbon w3-hover-text-theme-dark' href='/creative.html'>CREATIVE</a>" +
-	"<a class='w3-right w3-hover-white w3-text-carbon w3-hover-text-theme-dark' href='/dancer.html'>DANCER</a>" +
-	"<a class='w3-right w3-hover-white w3-text-carbon w3-hover-text-theme-dark' href='/connector.html'>CONNECTOR</a>" +
-	"<a class='w3-right w3-hover-white w3-text-carbon w3-hover-text-theme-dark' href='/hacker.html'>HACKER</a>" +
+	"<a href='javascript:void(0);' id='hamburger-button' class='w3-right w3-text-carbon mobile-nav' onclick='toggleTopNav()'><i class='fa fa-bars'></i></a>" +
+	"<a class='w3-right w3-text-carbon w3-hover-text-theme-dark' href='/index.html'>ABOUT</a>" +
+	"<a class='w3-right w3-text-carbon w3-hover-text-theme-dark' href='/creative.html'>CREATIVE</a>" +
+	"<a class='w3-right w3-text-carbon w3-hover-text-theme-dark' href='/dancer.html'>DANCER</a>" +
+	"<a class='w3-right w3-text-carbon w3-hover-text-theme-dark' href='/connector.html'>CONNECTOR</a>" +
+	"<a class='w3-right w3-text-carbon w3-hover-text-theme-dark' href='/hacker.html'>HACKER</a>" +
 	"</div>";
 
 
@@ -26,7 +26,7 @@ document.getElementById("menu").innerHTML = "<div id='myTopNav' class='w3-large 
  */
 function toggleTopNav() {
 	let topNav = document.getElementById("myTopNav");
-	let hamburgerButton = document.getElementById("hamburgerButton");
+	let hamburgerButton = document.getElementById("hamburger-button");
 	if (!topNav.classList.contains("responsive")) {
 		topNav.classList.add("responsive");
 		hamburgerButton.classList.remove("w3-text-carbon");
