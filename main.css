@@ -183,7 +183,7 @@ Show the link that contains the hamburger icon. */
 		right: 0;
 		top: 8px;
 	}
-	.topnav.responsive a {
+	.topnav.responsive a:not(#logo-container) {
 		float: none!important;
 		display: block;
 		text-align: center;
