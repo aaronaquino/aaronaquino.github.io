@@ -214,14 +214,19 @@ Show the link that contains the hamburger icon. */
  * Hacker rules.
  */
 
-#transitcat-container {
-	background-color: #7a9e82 !important;
-	color: #fff !important;
+#gmail-container {
+	background-color: #ea4e469c !important;
+	color:#000 !important;
 }
 
 #choreo-room-container {
 	background-color: #313131 !important;
 	color:#fff !important;
+}
+
+#transitcat-container {
+	background-color: #7a9e82 !important;
+	color: #fff !important;
 }
 
 #google-slides-container {
@@ -231,7 +236,7 @@ Show the link that contains the hamburger icon. */
 
 #google-maps-container {
 	background-color: #da736f !important;
-	color: #fff !important;
+	color: #000 !important;
 }
 
 .transitcat-list {
@@ -308,8 +313,8 @@ Show the link that contains the hamburger icon. */
 }
 
 #digital-art-container {
-	background-color: #0d47a1d4 !important;
-	color: #fff !important;
+	background-color: #0da16aa6 !important;
+	color: #000 !important;
 }
 
 hr.artwork-separator {
