@@ -244,12 +244,12 @@ Show the link that contains the hamburger icon. */
 }
 
 #transitcat-button {
-	background-color: #334c38 !important;
+	background-color: #465a4a !important;
 	color:#fff !important;
 }
 
 #transitcat-button:hover {
-	background-color: #2b332d !important;
+	background-color: #334c38 !important;
 	color:#fff !important;
 }
 
@@ -274,12 +274,13 @@ Show the link that contains the hamburger icon. */
 }
 
 #google-maps-button {
-	background-color: #326fec !important;
+	/*background-color: #326fec !important;*/
+	background-color: #6994ea !important;
 	color:#000 !important;
 }
 
 #google-maps-button:hover {
-	background-color: #0d54c3 !important;
+	background-color: #678dda !important;
 	color:#000 !important;
 }
 
