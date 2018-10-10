@@ -7,6 +7,10 @@
 	text-decoration: none; /* Removes underlines. */
 }
 
+.emphasis {
+	font-weight: 425;
+}
+
 .link-no-underline {
 	text-decoration: none; /* Removes underlines. */
 }
@@ -235,7 +239,7 @@ Show the link that contains the hamburger icon. */
 }
 
 #google-maps-container {
-	background-color: #da736f !important;
+	background-color: #3a9df4b5 !important;
 	color: #000 !important;
 }
 
