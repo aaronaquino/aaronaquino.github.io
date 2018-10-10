@@ -223,9 +223,19 @@ Show the link that contains the hamburger icon. */
 	color:#000 !important;
 }
 
-#choreo-room-container {
+#choreoroom-container {
 	background-color: #313131 !important;
 	color:#fff !important;
+}
+
+#choreoroom-button {
+	background-color: #fff !important;
+	color:#000 !important;
+}
+
+#choreoroom-button:hover {
+	background-color: #767c86 !important;
+	color:#000 !important;
 }
 
 #transitcat-container {
@@ -233,14 +243,44 @@ Show the link that contains the hamburger icon. */
 	color: #fff !important;
 }
 
+#transitcat-button {
+	background-color: #334c38 !important;
+	color:#fff !important;
+}
+
+#transitcat-button:hover {
+	background-color: #2b332d !important;
+	color:#fff !important;
+}
+
 #google-slides-container {
 	background-color: #ffe28d !important;
 	color: #000 !important;
 }
 
+#google-slides-button {
+	background-color: #fba333 !important;
+	color:#000 !important;
+}
+
+#google-slides-button:hover {
+	background-color: #e88608 !important;
+	color:#000 !important;
+}
+
 #google-maps-container {
 	background-color: #3a9df4b5 !important;
 	color: #000 !important;
+}
+
+#google-maps-button {
+	background-color: #326fec !important;
+	color:#000 !important;
+}
+
+#google-maps-button:hover {
+	background-color: #0d54c3 !important;
+	color:#000 !important;
 }
 
 .transitcat-list {
