@@ -238,6 +238,15 @@ Show the link that contains the hamburger icon. */
 	color:#000 !important;
 }
 
+#app-store-badge-container {
+	margin: 32px auto 0px auto;
+	width: 130px;
+}
+
+#app-store-badge {
+	cursor: pointer;
+}
+
 #transitcat-container {
 	background-color: #7a9e82 !important;
 	color: #fff !important;
@@ -251,6 +260,11 @@ Show the link that contains the hamburger icon. */
 #transitcat-button:hover {
 	background-color: #334c38 !important;
 	color:#fff !important;
+}
+
+.transitcat-list {
+	font-size:18px;
+	font-weight:300;
 }
 
 #google-slides-container {
@@ -274,28 +288,13 @@ Show the link that contains the hamburger icon. */
 }
 
 #google-maps-button {
-	/*background-color: #326fec !important;*/
 	background-color: #6994ea !important;
 	color:#000 !important;
 }
 
 #google-maps-button:hover {
-	background-color: #678dda !important;
+	background-color: #5377bd !important;
 	color:#000 !important;
-}
-
-.transitcat-list {
-	font-size:18px;
-	font-weight:300;
-}
-
-#app-store-badge-container {
-	margin: 32px auto 0px auto;
-	width: 130px;
-}
-
-#app-store-badge {
-	cursor: pointer;
 }
 
 
