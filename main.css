@@ -383,6 +383,10 @@ Show the link that contains the hamburger icon. */
 	color:#000 !important;
 }
 
+#choreo-top-row {
+	padding: 16px 16px 0px 16px;
+}
+
 #legacy-container {
 	background-color: #89beea !important;
 	color:#000 !important;	
@@ -413,10 +417,6 @@ Show the link that contains the hamburger icon. */
 	color:#000 !important;
 }
 
-#choreo-top-row {
-	padding: 16px 16px 0px 16px;
-}
-
 
 /**
  * Creative rules.
@@ -427,9 +427,29 @@ Show the link that contains the hamburger icon. */
 	color: #000 !important;
 }
 
+#one-second-button {
+	background-color: #039c5d !important;
+	color:#000 !important;
+}
+
+#one-second-button:hover {
+	background-color: #037748 !important;
+	color:#000 !important;
+}
+
 #digital-art-container {
 	background-color: #0da16aa6 !important;
 	color: #000 !important;
+}
+
+#digital-art-button {
+	background-color: #2399e0 !important;
+	color:#000 !important;
+}
+
+#digital-art-button:hover {
+	background-color: #2087c5 !important;
+	color:#000 !important;
 }
 
 hr.artwork-separator {
