@@ -308,8 +308,28 @@ Show the link that contains the hamburger icon. */
 	color:#000 !important;
 }
 
+#bosp-button {
+	background-color: #2196f3 !important;
+	color:#000 !important;
+}
+
+#bosp-button:hover {
+	background-color: #0d78ce !important;
+	color:#000 !important;
+}
+
 #pasu-container {
 	background-color: #d7dae1 !important;
+	color:#000 !important;
+}
+
+#pasu-button {
+	background-color: #b5b5b5 !important;
+	color:#000 !important;
+}
+
+#pasu-button:hover {
+	background-color: #929191 !important;
 	color:#000 !important;
 }
 
@@ -318,8 +338,28 @@ Show the link that contains the hamburger icon. */
 	color:#000 !important;
 }
 
+#spcsi-button {
+	background-color: #ef7777 !important;
+	color:#000 !important;
+}
+
+#spcsi-button:hover {
+	background-color: #d85c5c !important;
+	color:#000 !important;
+}
+
 #eagle-scout-container {
 	background-color: #91ceff !important;
+	color:#000 !important;
+}
+
+#eagle-scout-button {
+	background-color: #7a9fd2 !important;
+	color:#000 !important;
+}
+
+#eagle-scout-button:hover {
+	background-color: #6186b9 !important;
 	color:#000 !important;
 }
 
