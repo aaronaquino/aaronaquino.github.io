@@ -368,18 +368,48 @@ Show the link that contains the hamburger icon. */
  * Dancer rules.
  */
 
-#legacy-container {
-	background-color: #89beea !important;
-	color:#000 !important;	
-}
-
 #choreography-container {
 	background-color: #f1cfb1 !important;
 	color:#000 !important;
 }
 
+#choreography-button {
+	background-color: #ff9e07 !important;
+	color:#000 !important;
+}
+
+#choreography-button:hover {
+	background-color: #d88a12 !important;
+	color:#000 !important;
+}
+
+#legacy-container {
+	background-color: #89beea !important;
+	color:#000 !important;	
+}
+
+#legacy-button {
+	background-color: #007ce4 !important;
+	color:#000 !important;
+}
+
+#legacy-button:hover {
+	background-color: #026bc3 !important;
+	color:#000 !important;
+}
+
 #common-origins-container {
-	background-color: #ffa96a !important;
+	background-color: #ea928c !important;
+	color:#000 !important;
+}
+
+#common-origins-button {
+	background-color: #f55347 !important;
+	color:#000 !important;
+}
+
+#common-origins-button:hover {
+	background-color: #da473c !important;
 	color:#000 !important;
 }
 
