@@ -130,6 +130,16 @@ img[src$=".svg"] {
 	max-height: 40px;
 }
 
+#logo-container {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.menu-button {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 .topnav {
 	margin: 0px 8px;
 }
@@ -169,5 +179,8 @@ Show the link that contains the hamburger icon. */
 		float: none!important;
 		display: block;
 		text-align: center;
+	}
+	#menu-buttons-container.responsive {
+		float: none!important;
 	}
 }

@@ -2,11 +2,21 @@
  * Scrolls down to the bio when the down arrow is clicked.
  */
 $(document).ready(function (){
-    $("#down-arrow").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#about-me").offset().top
-        }, 900);
-    });
+	$("#down-arrow").click(function (){
+		$('html, body').animate({
+			scrollTop: $("#about-me").offset().top
+		}, 900);
+	});
+
+	// Scrolling can also be triggered through the Enter key to support a11y.
+	$("#down-arrow").keypress(function (e){
+		const key = e.which;
+		if(key == 13)  {
+			$('html, body').animate({
+				scrollTop: $("#about-me").offset().top
+			}, 900);
+		}
+	});
 });
 
 
