@@ -10,7 +10,7 @@ document.getElementById("copyright-footer").innerHTML =
 /**
  * Adds the navigation menu and buttons.
  */
-document.getElementById("menu").innerHTML = "<div id='myTopNav' class='w3-large w3-padding-8 topnav'>" +
+document.getElementById("menu").innerHTML = "<div id='myTopNav' class='w3-large w3-padding-8 topnav' role='navigation'>" +
 	"<div id='logo-container'>" +
 	"<a class='mobile-nav' href='/index.html'><img src='/assets/logo.png' alt='Logo' id='logo' class='w3-small'></a>" +
 	"</div>" +
