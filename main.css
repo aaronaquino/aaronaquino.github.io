@@ -220,7 +220,7 @@ Show the link that contains the hamburger icon. */
  */
 
 #gmail-container {
-	background-color: #ea4e469c !important;
+	background-color: #f5918d !important;
 	color:#000 !important;
 }
 
@@ -250,7 +250,7 @@ Show the link that contains the hamburger icon. */
 
 #transitcat-container {
 	background-color: #7a9e82 !important;
-	color: #fff !important;
+	color: #000 !important;
 }
 
 #transitcat-button {
@@ -284,7 +284,7 @@ Show the link that contains the hamburger icon. */
 }
 
 #google-maps-container {
-	background-color: #3a9df4b5 !important;
+	background-color: #71b9f9 !important;
 	color: #000 !important;
 }
 
@@ -438,7 +438,7 @@ Show the link that contains the hamburger icon. */
 }
 
 #digital-art-container {
-	background-color: #0da16aa6 !important;
+	background-color: #65c39d !important;
 	color: #000 !important;
 }
 
