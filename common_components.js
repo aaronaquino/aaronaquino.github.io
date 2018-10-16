@@ -12,7 +12,7 @@ document.getElementById("copyright-footer").innerHTML =
  */
 document.getElementById("menu").innerHTML = "<div id='myTopNav' class='w3-large w3-padding-8 topnav' role='navigation'>" +
 	"<div id='logo-container'>" +
-	"<a class='mobile-nav' href='/index.html'><img src='/assets/logo.png' alt='Logo' id='logo' class='w3-small'></a>" +
+	"<a class='mobile-nav' href='/index.html'><img id='logo' class='w3-small' src='/assets/logo.png' alt='Logo'></a>" +
 	"</div>" +
 	"<div id='menu-buttons-container' class='w3-right'>" +
 	"<a id='hamburger-button' class='w3-right w3-text-carbon mobile-nav' onclick='toggleTopNav()' href='javascript:void(0);'><i class='fa fa-bars'></i></a>" +
