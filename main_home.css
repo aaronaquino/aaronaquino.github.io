@@ -2,6 +2,11 @@
  * Homepage-specific rules.
  */
 
+/* Tip taken from: https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2. */
+body:not(.user-is-tabbing) #down-arrow:focus {
+  outline: none;
+}
+
 hr.section-divider {
 	width: 20%;
 	margin: 20px 40%;
