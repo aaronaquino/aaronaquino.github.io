@@ -1,7 +1,7 @@
 /* W3.CSS 2.71 by Jan Egil and Borge Refsnes */
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{color:#252525;margin:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,video{display:inline-block;vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
@@ -32,7 +32,7 @@ h1{font-size:124px}h2{font-size:48px}h3{font-size:30px}h4{font-size:20px}h5{font
 .w3-serif{font-family:"Times New Roman",Times,serif}
 h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
-hr{height:0;width:20%;border:0;border-top:1px solid #000;margin:20px 40%}
+hr{height:0;width:20%;border:0;border-top:1px solid #252525;margin:20px 40%}
 img{margin-bottom:-5px}a{color:inherit}
 table{border-collapse:collapse;border-spacing:0;width:100%;display:table}
 table,th,td{border:none}.w3-table-all{border:1px solid #ccc}
@@ -44,7 +44,7 @@ table,th,td{border:none}.w3-table-all{border:1px solid #ccc}
 .w3-centered tr th,.w3-centered tr td{text-align:center}
 .w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:6px 8px;display:table-cell;text-align:left;vertical-align:top}
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
-.w3-btn,.w3-btn-block{border:none;display:inline-block;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn,.w3-btn-block{border:none;display:inline-block;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#252525;background-color:#fff;text-align:center;cursor:pointer;white-space:nowrap}
 .w3-disabled,.w3-btn:disabled,.w3-btn-floating:disabled,.w3-btn-floating-large:disabled{cursor:not-allowed;opacity:0.3}
 .w3-btn.w3-disabled *,.w3-btn-block.w3-disabled,.w3-btn-floating.w3-disabled *,.w3-btn:disabled *,.w3-btn-floating:disabled *{pointer-events:none}
 .w3-btn.w3-disabled:hover,.w3-btn-block.w3-disabled:hover,.w3-btn:disabled:hover,.w3-btn-floating.w3-disabled:hover,.w3-btn-floating:disabled:hover,
@@ -285,8 +285,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-theme-dark,.w3-hover-theme-dark:hover{color:#fff!important;background-color:#0d47a1!important}
 .w3-soft-purple,.w3-hover-soft-purple:hover{color:#000!important;background-color:#d0d8eb!important}
 .w3-carbon,.w3-hover-carbon:hover{color:#000!important;background-color:#767676!important}
-.w3-light-grey,.w3-hover-light-grey:hover{color:#000!important;background-color:#f1f1f1!important}
-.w3-dark-grey,.w3-hover-dark-grey:hover{color:#000!important;background-color:#bdbdbd!important}
+.w3-light-grey,.w3-hover-light-grey:hover{background-color:#f1f1f1!important}
+.w3-dark-grey,.w3-hover-dark-grey:hover{background-color:#bdbdbd!important}
 .w3-pale-red,.w3-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
 .w3-pale-green,.w3-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
 .w3-pale-yellow,.w3-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}

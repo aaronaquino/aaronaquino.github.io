@@ -70,7 +70,7 @@ img[src$=".svg"] { /* For IE compatibility. */
 
 .image-outline {
 	padding: 1px;
-    border: 1px solid black;
+    border: 1px solid #252525;
 }
 
 .image-description {
@@ -235,22 +235,19 @@ Show the link that contains the hamburger icon. */
 
 #gmail-container {
 	background-color: #f5918d !important;
-	color:#000 !important;
 }
 
 #choreoroom-container {
 	background-color: #313131 !important;
-	color:#fff !important;
+	color: #f9f9f9 !important;
 }
 
 #choreoroom-button {
 	background-color: #fff !important;
-	color:#000 !important;
 }
 
 #choreoroom-button:hover {
 	background-color: #767c86 !important;
-	color:#000 !important;
 }
 
 #app-store-badge-container {
@@ -264,52 +261,45 @@ Show the link that contains the hamburger icon. */
 
 #transitcat-container {
 	background-color: #7a9e82 !important;
-	color: #000 !important;
 }
 
 #transitcat-button {
 	background-color: #465a4a !important;
-	color:#fff !important;
+	color:#f9f9f9 !important;
 }
 
 #transitcat-button:hover {
 	background-color: #334c38 !important;
-	color:#fff !important;
+	color:#f9f9f9 !important;
 }
 
 .transitcat-list {
-	font-size:18px;
-	font-weight:300;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 #google-slides-container {
 	background-color: #ffe28d !important;
-	color: #000 !important;
 }
 
 #google-slides-button {
 	background-color: #fba333 !important;
-	color:#000 !important;
 }
 
 #google-slides-button:hover {
 	background-color: #e88608 !important;
-	color:#000 !important;
 }
 
 #google-maps-container {
 	background-color: #71b9f9 !important;
-	color: #000 !important;
 }
 
 #google-maps-button {
-	background-color: #6994ea !important;
-	color:#000 !important;
+	background-color: #d0f1ff !important;
 }
 
 #google-maps-button:hover {
-	background-color: #5377bd !important;
-	color:#000 !important;
+	background-color: #a0d6ec !important;
 }
 
 
@@ -319,62 +309,50 @@ Show the link that contains the hamburger icon. */
 
 #bosp-container {
 	background-color: #9ac8dc !important;
-	color:#000 !important;
 }
 
 #bosp-button {
 	background-color: #2196f3 !important;
-	color:#000 !important;
 }
 
 #bosp-button:hover {
 	background-color: #0d78ce !important;
-	color:#000 !important;
 }
 
 #pasu-container {
 	background-color: #d7dae1 !important;
-	color:#000 !important;
 }
 
 #pasu-button {
 	background-color: #b5b5b5 !important;
-	color:#000 !important;
 }
 
 #pasu-button:hover {
 	background-color: #929191 !important;
-	color:#000 !important;
 }
 
 #spcsi-container {
 	background-color: #e9d7ac !important;
-	color:#000 !important;
 }
 
 #spcsi-button {
 	background-color: #ef7777 !important;
-	color:#000 !important;
 }
 
 #spcsi-button:hover {
 	background-color: #d85c5c !important;
-	color:#000 !important;
 }
 
 #eagle-scout-container {
 	background-color: #91ceff !important;
-	color:#000 !important;
 }
 
 #eagle-scout-button {
 	background-color: #7a9fd2 !important;
-	color:#000 !important;
 }
 
 #eagle-scout-button:hover {
 	background-color: #6186b9 !important;
-	color:#000 !important;
 }
 
 
@@ -384,17 +362,14 @@ Show the link that contains the hamburger icon. */
 
 #choreography-container {
 	background-color: #f1cfb1 !important;
-	color:#000 !important;
 }
 
 #choreography-button {
-	background-color: #ff9e07 !important;
-	color:#000 !important;
+	background-color: #fd9576 !important;
 }
 
 #choreography-button:hover {
-	background-color: #d88a12 !important;
-	color:#000 !important;
+	background-color: #de7c5f !important;
 }
 
 #choreo-top-row {
@@ -403,32 +378,26 @@ Show the link that contains the hamburger icon. */
 
 #legacy-container {
 	background-color: #89beea !important;
-	color:#000 !important;	
 }
 
 #legacy-button {
-	background-color: #007ce4 !important;
-	color:#000 !important;
+	background-color: #d0f1ff !important;
 }
 
 #legacy-button:hover {
-	background-color: #026bc3 !important;
-	color:#000 !important;
+	background-color: #a0d6ec !important;
 }
 
 #common-origins-container {
 	background-color: #ea928c !important;
-	color:#000 !important;
 }
 
 #common-origins-button {
-	background-color: #f55347 !important;
-	color:#000 !important;
+	background-color: #fdcdcb !important;
 }
 
 #common-origins-button:hover {
-	background-color: #da473c !important;
-	color:#000 !important;
+	background-color: #e8b2af !important;
 }
 
 
@@ -438,32 +407,26 @@ Show the link that contains the hamburger icon. */
 
 #one-second-container {
 	background-color: #83b271 !important;
-	color: #000 !important;
 }
 
 #one-second-button {
-	background-color: #039c5d !important;
-	color:#000 !important;
+	background-color: #ddffb6 !important;
 }
 
 #one-second-button:hover {
-	background-color: #037748 !important;
-	color:#000 !important;
+	background-color: #a6dc67 !important;
 }
 
 #digital-art-container {
 	background-color: #65c39d !important;
-	color: #000 !important;
 }
 
 #digital-art-button {
 	background-color: #2399e0 !important;
-	color:#000 !important;
 }
 
 #digital-art-button:hover {
 	background-color: #2087c5 !important;
-	color:#000 !important;
 }
 
 hr.artwork-separator {
