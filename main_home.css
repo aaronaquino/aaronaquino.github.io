@@ -120,6 +120,10 @@ img[src$=".svg"] {
 	width: 100%;
 }
 
+.social-icon {
+	margin: 0 2px 0 2px;
+}
+
 
 /**
  * Navigation bar and footer formatting.
