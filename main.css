@@ -247,7 +247,7 @@ Show the link that contains the hamburger icon. */
 }
 
 #choreoroom-button:hover {
-	background-color: #d4d2d2 !important;
+	background-color: #bfbbbb !important;
 }
 
 #app-store-badge-container {
@@ -264,13 +264,11 @@ Show the link that contains the hamburger icon. */
 }
 
 #transitcat-button {
-	background-color: #465a4a !important;
-	color:#f9f9f9 !important;
+	background-color: #b1dcbb !important;
 }
 
 #transitcat-button:hover {
-	background-color: #334c38 !important;
-	color:#f9f9f9 !important;
+	background-color: #93cea1 !important;
 }
 
 .transitcat-list {
@@ -283,11 +281,11 @@ Show the link that contains the hamburger icon. */
 }
 
 #google-slides-button {
-	background-color: #fba333 !important;
+	background-color: #fbb254 !important;
 }
 
 #google-slides-button:hover {
-	background-color: #e88608 !important;
+	background-color: #f1a748 !important;
 }
 
 #google-maps-container {
