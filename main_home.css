@@ -24,12 +24,13 @@ hr.section-divider {
 }
 
 #down-arrow {
+	border-radius: 25px;
 	cursor: pointer;
 }
 
 #down-arrow-container {
-	width: 52px;
-	margin: 0px auto 20px auto;
+	width: 50px;
+	margin: 0px auto 24px auto;
 }
 
 #homepage-name {

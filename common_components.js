@@ -16,11 +16,11 @@ document.getElementById("menu").innerHTML = "<div id='myTopNav' class='w3-large 
 	"</div>" +
 	"<div id='menu-buttons-container' class='w3-right'>" +
 	"<a id='hamburger-button' class='w3-right w3-text-carbon mobile-nav' onclick='toggleTopNav()' href='javascript:void(0);'><i class='fa fa-bars'></i></a>" +
-	"<a class='menu-button w3-text-carbon w3-hover-text-theme-dark w3-hover-soft-purple w3-round-large' href='/hacker.html'>HACKER</a>" +
-	"<a class='menu-button w3-text-carbon w3-hover-text-theme-dark w3-hover-soft-purple w3-round-large' href='/connector.html'>CONNECTOR</a>" +
-	"<a class='menu-button w3-text-carbon w3-hover-text-theme-dark w3-hover-soft-purple w3-round-large' href='/dancer.html'>DANCER</a>" +
-	"<a class='menu-button w3-text-carbon w3-hover-text-theme-dark w3-hover-soft-purple w3-round-large' href='/creative.html'>CREATIVE</a>" +
-	"<a class='menu-button w3-text-carbon w3-hover-text-theme-dark w3-hover-soft-purple w3-round-large' href='/index.html'>ABOUT</a>" +
+	"<a class='menu-button w3-text-dark-grey w3-hover-light-grey w3-round-large' href='/hacker.html'>HACKER</a>" +
+	"<a class='menu-button w3-text-dark-grey w3-hover-light-grey w3-round-large' href='/connector.html'>CONNECTOR</a>" +
+	"<a class='menu-button w3-text-dark-grey w3-hover-light-grey w3-round-large' href='/dancer.html'>DANCER</a>" +
+	"<a class='menu-button w3-text-dark-grey w3-hover-light-grey w3-round-large' href='/creative.html'>CREATIVE</a>" +
+	"<a class='menu-button w3-text-dark-grey w3-hover-light-grey w3-round-large' href='/index.html'>ABOUT</a>" +
 	"</div>" +
 	"</div>";
 
