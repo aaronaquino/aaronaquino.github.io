@@ -4,44 +4,44 @@
 document.getElementById("copyright-footer").innerHTML =
 	"<p class='copyright-text'>&copy;  " +
 	new Date().getFullYear() +
-	" Copyright <a class='link-no-underline w3-hover-text-theme-dark' href='/index.html'>Aaron Aquino</a>. All rights reserved.";
+	" Copyright <a class='link-no-underline hidden-link' href='/index.html'>Aaron Aquino</a>. All rights reserved.";
 
 
 /**
  * Adds the navigation menu and buttons.
  */
-document.getElementById("menu").innerHTML = "<div id='myTopNav' class='w3-large w3-padding-8 topnav' role='navigation'>" +
+document.getElementById("menu").innerHTML = "<div id='top-nav' role='navigation'>" +
 	"<div id='logo-container'>" +
-	"<a class='mobile-nav' href='/index.html'><img id='logo' class='w3-small' src='/assets/logo.png' alt='Logo'></a>" +
+	"<a class='mobile-nav' href='/index.html'><img id='logo' src='/assets/logo.png' alt='Logo'></a>" +
 	"</div>" +
-	"<div id='menu-buttons-container' class='w3-right'>" +
-	"<a id='hamburger-button' class='w3-right w3-text-dark-grey mobile-nav' onclick='toggleTopNav()' href='javascript:void(0);'><i class='fa fa-bars'></i></a>" +
-	"<a class='menu-button w3-text-dark-grey w3-hover-soft-grey w3-round-large' href='/hacker.html'>HACKER</a>" +
-	"<a class='menu-button w3-text-dark-grey w3-hover-soft-grey w3-round-large' href='/connector.html'>CONNECTOR</a>" +
-	"<a class='menu-button w3-text-dark-grey w3-hover-soft-grey w3-round-large' href='/dancer.html'>DANCER</a>" +
-	"<a class='menu-button w3-text-dark-grey w3-hover-soft-grey w3-round-large' href='/creative.html'>CREATIVE</a>" +
-	"<a class='menu-button w3-text-dark-grey w3-hover-soft-grey w3-round-large' href='/index.html'>ABOUT</a>" +
+	"<div id='menu-buttons-container'>" +
+	"<a id='hamburger-button' class='menu-button-untouched mobile-nav' onclick='toggleTopNav()' href='javascript:void(0);'><i class='fa fa-bars'></i></a>" +
+	"<a class='menu-button menu-button-untouched' href='/hacker.html'>HACKER</a>" +
+	"<a class='menu-button menu-button-untouched' href='/connector.html'>CONNECTOR</a>" +
+	"<a class='menu-button menu-button-untouched' href='/dancer.html'>DANCER</a>" +
+	"<a class='menu-button menu-button-untouched' href='/creative.html'>CREATIVE</a>" +
+	"<a class='menu-button menu-button-untouched' href='/index.html'>ABOUT</a>" +
 	"</div>" +
 	"</div>";
 
 
 /**
- * Toggle between adding and removing the "responsive" class to topnav when the user clicks on the hamburger icon.
+ * Toggle between adding and removing the "responsive" class to the topnav when the user clicks on the hamburger icon.
  */
 function toggleTopNav() {
-	let topNav = document.getElementById("myTopNav");
+	let topNav = document.getElementById("top-nav");
 	let hamburgerButton = document.getElementById("hamburger-button");
 	let menuButtonsContainer = document.getElementById("menu-buttons-container");
 	if (!topNav.classList.contains("responsive")) {
 		topNav.classList.add("responsive");
 		menuButtonsContainer.classList.add("responsive");
-		hamburgerButton.classList.remove("w3-text-dark-grey");
-		hamburgerButton.classList.add("w3-text-theme-dark");
+		hamburgerButton.classList.remove("menu-button-untouched");
+		hamburgerButton.classList.add("menu-button-touched");
 	} else {
 		topNav.classList.remove("responsive");
 		menuButtonsContainer.classList.remove("responsive");
-		hamburgerButton.classList.remove("w3-text-theme-dark");
-		hamburgerButton.classList.add("w3-text-dark-grey");
+		hamburgerButton.classList.remove("menu-button-touched");
+		hamburgerButton.classList.add("menu-button-untouched");
 	}
 }
  

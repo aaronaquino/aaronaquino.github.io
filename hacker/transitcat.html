@@ -5,8 +5,8 @@
 	<title>Aaron Aquino</title>
 	<link rel="icon" href="/favicon.ico">
 	<link rel="stylesheet" href="/main.css">
-	<link rel="stylesheet" href="/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css" integrity="sha384-uKQOWcYZKOuKmpYpvT0xCFAs/wE157X5Ua3H5onoRAOCNkJAMX/6QF0iXGGQV9cP" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 </head>
@@ -18,14 +18,14 @@
 </header>
 
 <div role="main">
-	<div class="w3-container w3-padding-24 w3-light-grey">
-		<h1 class="w3-center experience-title">Transitcat</h1>
-		<h3 class="w3-center secondary-caption">
+	<div class="ama-container hero-bar">
+		<h1 class="ama-center experience-title">Transitcat</h1>
+		<h3 class="ama-center secondary-caption">
 			Spring 2018 | Stanford, CA
 		</h3>
 	</div>
 
-	<div class="experience-container w3-padding-24">
+	<div class="experience-container">
 		<p class="emphasis">
 			Note: this article can also be viewed as a guest <a href="https://transit.land/news/2018/10/09/transitcat.html" target="_blank" class="colored-link">blog post</a> on the Transitland website. A huge thank you to them for helping sharing our work with the wider public transit enthusiast/developer community!
 		</p>
@@ -39,7 +39,7 @@
 			<li>correlates public transit data with nearby business information, and</li>
 			<li>is free!</li>
 		</ul>
-		<div class="w3-center">
+		<div class="ama-center">
 			<img class="w3-round-large"
 				 src="/hacker/assets/transitcat_home_2000.png"
 				 srcset="/hacker/assets/transitcat_home_200.png 200w, /hacker/assets/transitcat_home_400.png 400w, /hacker/assets/transitcat_home_800.png 800w, /hacker/assets/transitcat_home_1000.png 1000w, /hacker/assets/transitcat_home_2000.png 2000w"
@@ -58,7 +58,7 @@
 			<li><a href="https://www.yelp.com/fusion" target="_blank" class="colored-link">Yelp</a>, for querying nearby business information; and</li>
 			<li><a href="https://snap.stanford.edu/snappy/" target="_blank" class="colored-link">SNAP</a>, a powerful graph library for modeling public transit networks as computer science graphs.</li>
 		</ul>
-		<div class="w3-center">
+		<div class="ama-center">
 			<img class="w3-round-large image-outline"
 				 src="/hacker/assets/architecture_diagram_960.png"
 				 srcset="/hacker/assets/architecture_diagram_200.png 200w, /hacker/assets/architecture_diagram_400.png 400w, /hacker/assets/architecture_diagram_800.png 800w, /hacker/assets/architecture_diagram_960.png 960w"
@@ -69,7 +69,7 @@
 		<p>
 			A Transitcat user begins by uploading a GTFS zip file for a particular public transit network (PTN), such as <a href="https://transit.land/feed-registry/operators/o-9q9-caltrain" target="_blank" class="colored-link">Caltrain</a> or the <a href="https://transit.land/feed-registry/operators/o-dr5r-nyct" target="_blank" class="colored-link">New York subway</a>. We then feed this data into SNAP to build a <a href="https://en.wikipedia.org/wiki/Directed_graph" target="_blank" class="colored-link">directed graph</a> that models the PTN; each stop is represented as a node, and two nodes share an edge if they represent consecutive stops on the same transit line. At this point we provide the user with some helpful graph stats (e.g., the number of nodes/edges and the average <a href="https://en.wikipedia.org/wiki/Degree_(graph_theory)" target="_blank" class="colored-link">node degree</a>) as well as allow them to merge their network with other PTNs. This merging feature is particularly useful as it allows users to build aggregate PTNs from multiple transit types, which in turn empowers them to conduct more thorough and real-world analyses, such as examining how Caltrain, BART, and Muni work together for riders in the Bay Area.
 		</p>
-		<div class="w3-center">
+		<div class="ama-center">
 			<img class="w3-round-large"
 				 src="/hacker/assets/transitcat_graph_model_2000.png"
 				 srcset="/hacker/assets/transitcat_graph_model_200.png 200w, /hacker/assets/transitcat_graph_model_400.png 400w, /hacker/assets/transitcat_graph_model_800.png 800w, /hacker/assets/transitcat_graph_model_1000.png 1000w, /hacker/assets/transitcat_graph_model_2000.png 2000w"
@@ -80,7 +80,7 @@
 		<p>
 			One of the limits of our directed graph model, however, is that it does not convey any geographic or spatial meaning. To remedy this issue, Transitcat also provides a nice visualization of a PTN's stops and lines using the Google Maps API. From here users can take advantage of one of our application's most powerful features: the ability to generate <a href="https://en.wikipedia.org/wiki/Isochrone_map" target="_blank" class="colored-link">isochrone maps</a>. Basically, we let users drop a pin anywhere on the map to indicate a starting point. We then utilize the previously mentioned Transitland API as well as some clever algorithm magic to figure out how far a rider can travel from that point within 10, 20, and 30 minutes using any combination of walking and public transit. The reachable areas for these three different time windows are represented by the red circles of increasing radius shown on the map. Users can also tweak both the day of the week and time of the day (e.g., Wednesday at 5pm) to see how the isochrones change over time.
 		</p>
-		<div class="w3-center">
+		<div class="ama-center">
 			<img class="w3-round-large"
 				 src="/hacker/assets/transitcat_google_maps_view_2000.png"
 				 srcset="/hacker/assets/transitcat_google_maps_view_200.png 200w, /hacker/assets/transitcat_google_maps_view_400.png 400w, /hacker/assets/transitcat_google_maps_view_800.png 800w, /hacker/assets/transitcat_google_maps_view_1000.png 1000w, /hacker/assets/transitcat_google_maps_view_2000.png 2000w"
@@ -88,7 +88,7 @@
 				 alt="">
 			<p class="image-description">The aggregate Caltrain + BART network, with 10-, 20-, and 30-minute isochrones in red</p>
 		</div>
-		<div class="w3-center">
+		<div class="ama-center">
 			<img class="w3-round-large"
 				 src="/hacker/assets/transitcat_isochrones_2000.png"
 				 srcset="/hacker/assets/transitcat_isochrones_200.png 200w, /hacker/assets/transitcat_isochrones_400.png 400w, /hacker/assets/transitcat_isochrones_800.png 800w, /hacker/assets/transitcat_isochrones_1000.png 1000w, /hacker/assets/transitcat_isochrones_2000.png 2000w"
@@ -99,7 +99,7 @@
 		<p>
 			As an added bonus, users can search within these isochrones for nearby businesses, which provides a quick metric for evaluating the equity of a PTN. For instance, a public transit planner might be interested in knowing how many grocery stores or banks are within walking distance of a particular stop. Or they simply might want to know how many Thai restaurants are in the area 😋. Either way, Transitcat seamlessly correlates public transit data with business information (available via the Yelp API), which is a feature that several of our needfinding contacts suggested.
 		</p>
-		<div class="w3-center">
+		<div class="ama-center">
 			<img class="w3-round-large"
 				 src="/hacker/assets/transitcat_yelp_2000.png"
 				 srcset="/hacker/assets/transitcat_yelp_200.png 200w, /hacker/assets/transitcat_yelp_400.png 400w, /hacker/assets/transitcat_yelp_800.png 800w, /hacker/assets/transitcat_yelp_1000.png 1000w, /hacker/assets/transitcat_yelp_2000.png 2000w"
@@ -113,7 +113,7 @@
 		<p>
 			To aid with this sort of analysis Transitcat allows users to select a connection between two stops in a PTN. Our app then determines how much the average travel time across the network would increase if that particular connection was removed, which is called the criticality of that edge. Although there are some limitations to this calculation (e.g., Transitcat makes the unrealistic assumption that all lines are running at all times of the day), criticality does provide a convenient baseline for measuring the relative importance of different connections in a PTN, which can be a nice starting point for helping public transit planners determine where to modify service frequency or implement new stops.
 		</p>
-		<div class="w3-center">
+		<div class="ama-center">
 			<img class="w3-round-large"
 				 src="/hacker/assets/transitcat_criticality_2000.png"
 				 srcset="/hacker/assets/transitcat_criticality_200.png 200w, /hacker/assets/transitcat_criticality_400.png 400w, /hacker/assets/transitcat_criticality_800.png 800w, /hacker/assets/transitcat_criticality_1000.png 1000w, /hacker/assets/transitcat_criticality_2000.png 2000w"
@@ -127,7 +127,7 @@
 	</div>
 </div>
 
-<footer id="copyright-footer" class="w3-container"></footer>
+<footer id="copyright-footer" class="ama-container"></footer>
 
 </body>
 
