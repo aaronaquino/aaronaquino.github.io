@@ -16,11 +16,11 @@ document.getElementById("menu").innerHTML = "<div id='top-nav' role='navigation'
 	"</div>" +
 	"<div id='menu-buttons-container'>" +
 	"<a id='hamburger-button' class='menu-button-untouched mobile-nav' onclick='toggleTopNav()' href='javascript:void(0);'><i class='fa fa-bars'></i></a>" +
-	"<a class='menu-button menu-button-untouched' href='/hacker.html'>HACKER</a>" +
-	"<a class='menu-button menu-button-untouched' href='/connector.html'>CONNECTOR</a>" +
-	"<a class='menu-button menu-button-untouched' href='/dancer.html'>DANCER</a>" +
-	"<a class='menu-button menu-button-untouched' href='/creative.html'>CREATIVE</a>" +
-	"<a class='menu-button menu-button-untouched' href='/index.html'>ABOUT</a>" +
+	"<a class='menu-button menu-button-untouched' href='/hacker.html'>Hacker</a>" +
+	"<a class='menu-button menu-button-untouched' href='/connector.html'>Connector</a>" +
+	"<a class='menu-button menu-button-untouched' href='/dancer.html'>Dancer</a>" +
+	"<a class='menu-button menu-button-untouched' href='/creative.html'>Creative</a>" +
+	"<a class='menu-button menu-button-untouched' href='/index.html'>About</a>" +
 	"</div>" +
 	"</div>";
 

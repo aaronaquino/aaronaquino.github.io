@@ -1,4 +1,3 @@
-*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
@@ -21,13 +20,18 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 input[type=search]{box-sizing:content-box;-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box}
 input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
 fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
-legend{border:0;padding:0}pre,textarea{overflow:auto}
 /* End extract from normalize.css */
 
 
 /**
  * The basics.
  */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
 
 html, body {
 	font-family: 'Roboto', sans-serif;
@@ -77,6 +81,10 @@ p {
 	font-weight: 300;
 }
 
+a {
+	color: inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	margin: 10px 0;
@@ -92,19 +100,6 @@ hr {
 	border: 0;
 	border-top: 1px solid #252525;
 	margin: 20px 40%;
-}
-
-
-/**
- * Text formatting.
- */
-
-.menu-button-untouched {
-	color: #666666!important;
-}
-
-.menu-button-touched,.hidden-link:hover {
-	color: #0d47a1!important;
 }
 
 
@@ -132,20 +127,11 @@ hr {
 	padding-bottom: 24px;
 }
 
-.experience-preview-image-container {
-	padding-top: 8px;
-	padding-bottom: 8px;
-}
-
-.experience-preview-container {
-	padding-top: 48px;
-	padding-bottom: 48px;
-}
-
 
 /**
  * Columns.
  */
+
 .ama-col{float:left;width:100%}
 .ama-col.s1{width:8.33333%}
 .ama-col.s2{width:16.66666%}
@@ -195,10 +181,10 @@ hr {
 	border: none;
 	display: inline-block;
 	padding: 6px 16px;
-	border-radius: 4px!important;
+	border-radius: 4px;
 	vertical-align: middle;
 	overflow: hidden;
-	text-decoration: none!important;
+	text-decoration: none;
 	color: #252525;
 	background-color: #fff;
 	text-align: center;
@@ -214,7 +200,7 @@ hr {
 }
 
 .colored-link {
-	color: #0d47a1!important;
+	color: #0d47a1;
 	font-weight: 400;
 	text-decoration: none; /* Removes underlines. */
 }
@@ -223,16 +209,13 @@ hr {
 	font-weight: 425;
 }
 
-a {
-	color: inherit;
-}
-
 .link-no-underline {
 	text-decoration: none; /* Removes underlines. */
 }
 
 .more-info-button {
 	margin-top: 20px;
+	text-transform: uppercase;
 }
 
 .secondary-caption {
@@ -300,7 +283,7 @@ img[src$=".svg"] { /* For IE compatibility. */
 }
 
 .role-title-container#connector-title-container {
-	width: 75vw;
+	width: 80vw;
 }
 
 @media screen and (min-width: 500px) {
@@ -360,11 +343,6 @@ img[src$=".svg"] { /* For IE compatibility. */
  * Navigation bar and footer formatting.
  */
 
-.copyright-text {
-	font-size: 1em;
-	font-weight: 400;
-}
-
 #logo {
 	cursor: pointer;
 	max-height: 40px;
@@ -383,10 +361,19 @@ img[src$=".svg"] { /* For IE compatibility. */
 	display: inline-block;
 	vertical-align: middle;
 	border-radius: 8px;
+	text-transform: uppercase;
 }
 
 .menu-button:hover {
 	background-color: #ededed;
+}
+
+.menu-button-untouched {
+	color: #666666;
+}
+
+.menu-button-touched, .hidden-link:hover {
+	color: #0d47a1;
 }
 
 #hamburger-button {
@@ -432,18 +419,34 @@ Show the link that contains the hamburger icon. */
 		top: 8px;
 	}
 	#top-nav.responsive a:not(#logo-container) {
-		float: none!important;
+		float: none;
 		display: block;
 		text-align: center;
 	}
 	#menu-buttons-container.responsive {
-		float: none!important;
+		float: none;
 	}
 }
+
+.copyright-text {
+	font-size: 1em;
+	font-weight: 400;
+}
+
 
 /**
  * Experience-related rules.
  */
+
+.experience-preview-container {
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+.experience-preview-image-container {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
 
 .experience-container {
 	padding: 0px 32px;
@@ -468,20 +471,20 @@ Show the link that contains the hamburger icon. */
  */
 
 #gmail-container {
-	background-color: #f5918d !important;
+	background-color: #f5918d;
 }
 
 #choreoroom-container {
-	background-color: #313131 !important;
-	color: #f9f9f9 !important;
+	background-color: #313131;
+	color: #f9f9f9;
 }
 
 #choreoroom-button {
-	background-color: #fff !important;
+	background-color: #fff;
 }
 
 #choreoroom-button:hover {
-	background-color: #bfbbbb !important;
+	background-color: #bfbbbb;
 }
 
 #app-store-badge-container {
@@ -494,15 +497,15 @@ Show the link that contains the hamburger icon. */
 }
 
 #transitcat-container {
-	background-color: #7a9e82 !important;
+	background-color: #7a9e82;
 }
 
 #transitcat-button {
-	background-color: #b1dcbb !important;
+	background-color: #b1dcbb;
 }
 
 #transitcat-button:hover {
-	background-color: #93cea1 !important;
+	background-color: #93cea1;
 }
 
 .transitcat-list {
@@ -511,27 +514,27 @@ Show the link that contains the hamburger icon. */
 }
 
 #google-slides-container {
-	background-color: #ffe28d !important;
+	background-color: #ffe28d;
 }
 
 #google-slides-button {
-	background-color: #fbb254 !important;
+	background-color: #fbb254;
 }
 
 #google-slides-button:hover {
-	background-color: #f1a748 !important;
+	background-color: #f1a748;
 }
 
 #google-maps-container {
-	background-color: #71b9f9 !important;
+	background-color: #71b9f9;
 }
 
 #google-maps-button {
-	background-color: #d0f1ff !important;
+	background-color: #d0f1ff;
 }
 
 #google-maps-button:hover {
-	background-color: #a0d6ec !important;
+	background-color: #a0d6ec;
 }
 
 
@@ -540,51 +543,51 @@ Show the link that contains the hamburger icon. */
  */
 
 #bosp-container {
-	background-color: #9ac8dc !important;
+	background-color: #9ac8dc;
 }
 
 #bosp-button {
-	background-color: #2196f3 !important;
+	background-color: #2196f3;
 }
 
 #bosp-button:hover {
-	background-color: #0d78ce !important;
+	background-color: #0d78ce;
 }
 
 #pasu-container {
-	background-color: #d7dae1 !important;
+	background-color: #d7dae1;
 }
 
 #pasu-button {
-	background-color: #b6bcdc !important;
+	background-color: #b6bcdc;
 }
 
 #pasu-button:hover {
-	background-color: #9ea5ce !important;
+	background-color: #9ea5ce;
 }
 
 #spcsi-container {
-	background-color: #e9d7ac !important;
+	background-color: #e9d7ac;
 }
 
 #spcsi-button {
-	background-color: #ef7777 !important;
+	background-color: #ef7777;
 }
 
 #spcsi-button:hover {
-	background-color: #d85c5c !important;
+	background-color: #d85c5c;
 }
 
 #eagle-scout-container {
-	background-color: #91ceff !important;
+	background-color: #91ceff;
 }
 
 #eagle-scout-button {
-	background-color: #d0f1ff !important;
+	background-color: #d0f1ff;
 }
 
 #eagle-scout-button:hover {
-	background-color: #a0d6ec !important;
+	background-color: #a0d6ec;
 }
 
 
@@ -593,15 +596,15 @@ Show the link that contains the hamburger icon. */
  */
 
 #choreography-container {
-	background-color: #f1cfb1 !important;
+	background-color: #f1cfb1;
 }
 
 #choreography-button {
-	background-color: #fd9576 !important;
+	background-color: #fd9576;
 }
 
 #choreography-button:hover {
-	background-color: #de7c5f !important;
+	background-color: #de7c5f;
 }
 
 #choreo-top-row {
@@ -613,27 +616,27 @@ Show the link that contains the hamburger icon. */
 }
 
 #legacy-container {
-	background-color: #89beea !important;
+	background-color: #89beea;
 }
 
 #legacy-button {
-	background-color: #d0f1ff !important;
+	background-color: #d0f1ff;
 }
 
 #legacy-button:hover {
-	background-color: #a0d6ec !important;
+	background-color: #a0d6ec;
 }
 
 #common-origins-container {
-	background-color: #ea928c !important;
+	background-color: #ea928c;
 }
 
 #common-origins-button {
-	background-color: #fdcdcb !important;
+	background-color: #fdcdcb;
 }
 
 #common-origins-button:hover {
-	background-color: #e8b2af !important;
+	background-color: #e8b2af;
 }
 
 
@@ -642,27 +645,27 @@ Show the link that contains the hamburger icon. */
  */
 
 #one-second-container {
-	background-color: #9bd69d !important;
+	background-color: #9bd69d;
 }
 
 #one-second-button {
-	background-color: #ddffb6 !important;
+	background-color: #ddffb6;
 }
 
 #one-second-button:hover {
-	background-color: #c5e89d !important;
+	background-color: #c5e89d;
 }
 
 #digital-art-container {
-	background-color: #65c39d !important;
+	background-color: #65c39d;
 }
 
 #digital-art-button {
-	background-color: #bcf5dd !important;
+	background-color: #bcf5dd;
 }
 
 #digital-art-button:hover {
-	background-color: #a3e0c7 !important;
+	background-color: #a3e0c7;
 }
 
 hr.artwork-separator {
