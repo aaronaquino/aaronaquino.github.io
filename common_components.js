@@ -12,10 +12,10 @@ document.getElementById("copyright-footer").innerHTML =
  */
 document.getElementById("menu").innerHTML = "<div id='top-nav' role='navigation'>" +
 	"<div id='logo-container'>" +
-	"<a class='mobile-nav' href='/index.html'><img id='logo' src='/assets/logo.png' alt='Logo'></a>" +
+	"<a class='mobile-nav' href='/index.html'><img id='logo' src='/assets/logo.png' alt='Aaron's logo'></a>" +
 	"</div>" +
 	"<div id='menu-buttons-container'>" +
-	"<a id='hamburger-button' class='menu-button-untouched mobile-nav' onclick='toggleTopNav()' href='javascript:void(0);'><i class='fa fa-bars'></i></a>" +
+	"<a id='hamburger-button' class='menu-button-untouched mobile-nav' onclick='toggleTopNav()' href='javascript:void(0);' aria-labelledby='hamburger-aria-instructions'><div id='hamburger-aria-instructions' class='visually-hidden'>Click to open menu</div><i class='fa fa-bars'></i></a>" +
 	"<a class='menu-button menu-button-untouched' href='/hacker.html'>Hacker</a>" +
 	"<a class='menu-button menu-button-untouched' href='/connector.html'>Connector</a>" +
 	"<a class='menu-button menu-button-untouched' href='/dancer.html'>Dancer</a>" +
