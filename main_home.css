@@ -124,9 +124,14 @@ hr.section-divider {
 	cursor: pointer;
 }
 
-#down-arrow:hover {
-	background-color: #ededed;
+@media only screen and (min-width : 1224px) {
+    #down-arrow:hover {
+        background-color: #ededed;
+    }
 }
+/*#down-arrow:hover {
+	background-color: #ededed;
+}*/
 
 #down-arrow-container {
 	width: 50px;
