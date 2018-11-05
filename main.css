@@ -268,11 +268,6 @@ img[src$=".svg"] { /* For IE compatibility. */
 	width: 100%;
 }
 
-.image-outline {
-	padding: 1px;
-    border: 1px solid #252525;
-}
-
 .image-description {
 	font-weight: 400;
 }
