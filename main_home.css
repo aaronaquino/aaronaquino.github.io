@@ -336,7 +336,7 @@ hr.section-divider {
 	font-size: 24px;
 }
 
-.visually-hidden { 
+.screenreader-only { 
 	position: absolute;
 	overflow: hidden;
 	clip: rect(0 0 0 0);

@@ -227,7 +227,12 @@ hr {
 	font-size: 24px;
 }
 
-.visually-hidden { 
+.spinner {
+	color: #252525;
+	margin: 22% 42%; /* Not super precise, but it works. */
+}
+
+.screenreader-only { 
 	position: absolute;
 	overflow: hidden;
 	clip: rect(0 0 0 0);
