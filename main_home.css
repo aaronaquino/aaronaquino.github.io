@@ -192,7 +192,6 @@ hr.section-divider {
 }
 
 #social-icons i {
-	animation-name: fade;
 	animation-duration: 0.5s;
 	animation-timing-function: cubic-bezier(0,0,0,1);
 	animation-fill-mode: forwards;
@@ -233,6 +232,7 @@ hr.section-divider {
 
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	background-repeat: no-repeat;
 }
 
 #social-icons i#spotify-logo:hover {
