@@ -19,6 +19,7 @@ $(document).ready(function (){
 		$('html, body').animate({
 			scrollTop: $("#about-me").offset().top
 		}, 900);
+		$("#down-arrow").blur();
 	});
 
 	// Scrolling can also be triggered through the Enter key to support a11y.
@@ -28,6 +29,7 @@ $(document).ready(function (){
 			$('html, body').animate({
 				scrollTop: $("#about-me").offset().top
 			}, 900);
+			$("#down-arrow").blur();
 		}
 	});
 });
