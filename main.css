@@ -229,7 +229,11 @@ hr {
 
 .spinner {
 	color: #252525;
-	margin: 22% 42%; /* Not super precise, but it works. */
+	position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    left: 50%;
+    margin-left: -30px;
 }
 
 .screenreader-only { 
