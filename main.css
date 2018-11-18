@@ -347,14 +347,17 @@ img[src$=".svg"] { /* For IE compatibility. */
 @media screen and (min-width: 1000px) {
 	.role-title-container {
 		width: 30vw;
+		max-width: 420px;
 	}
 
 	.role-title-container#connector-title-container {
 		width: 45vw;
+		max-width: 580px;
 	}
 
 	.role-title-container#creative-title-container {
 		width: 35vw;
+		max-width: 450px;
 	}
 }
 
