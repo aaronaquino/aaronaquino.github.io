@@ -124,14 +124,11 @@ hr.section-divider {
 	cursor: pointer;
 }
 
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width: 1224px) {
     #down-arrow:hover {
         background-color: #ededed;
     }
 }
-/*#down-arrow:hover {
-	background-color: #ededed;
-}*/
 
 #down-arrow-container {
 	width: 50px;
@@ -348,7 +345,6 @@ hr.section-divider {
 	border: 0;
 }
 
-
 /**
  * Image utilities.
  */
@@ -425,7 +421,7 @@ img[src$=".svg"] {
 	display: none;
 }
 
-/* When the screen is less than 620 pixels wide, hide all links, except for those with the "mobile-nav" class.
+/* When the screen is less than 620 pixels wide, hide all links, except for those with the `mobile-nav` class.
 Show the link that contains the hamburger icon. */
 @media screen and (max-width: 620px) {
 	#top-nav a:not(.mobile-nav) {
@@ -437,7 +433,7 @@ Show the link that contains the hamburger icon. */
 	}
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. */
+/* The `responsive` class is added to the topnav with JavaScript when the user clicks on the icon. */
 @media screen and (max-width: 620px) {
 	#top-nav.responsive {
 		position: relative;
