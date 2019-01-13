@@ -176,8 +176,9 @@ hr.section-divider {
 }
 
 #about-me {
-	color: #000;
 	background-color: #d0d8eb;
+	color: #000;
+	padding: 48px 0px 24px 0px;
 }
 
 #profile-picture {
@@ -186,8 +187,7 @@ hr.section-divider {
 }
 
 #profile-picture-container {
-	padding-top: 40px;
-	padding-bottom: 16px;
+	padding-bottom: 20px;
 }
 
 #social-icons {
