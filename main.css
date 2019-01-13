@@ -462,13 +462,11 @@ Show the link that contains the hamburger icon. */
  */
 
 .experience-preview-container {
-	padding-top: 48px;
-	padding-bottom: 48px;
+	padding: 48px 0px;
 }
 
 .experience-preview-image-container {
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding: 8px 0px 18px 0px;
 }
 
 .experience-container {
