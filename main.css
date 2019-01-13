@@ -192,6 +192,7 @@ hr {
 	white-space: nowrap;
 	box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
 	transition: box-shadow .08s linear, min-width .15s cubic-bezier(0.4, 0.0, 0.2, 1);
+	text-transform: uppercase;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -220,7 +221,6 @@ hr {
 
 .more-info-button {
 	margin-top: 20px;
-	text-transform: uppercase;
 }
 
 .secondary-caption {
