@@ -1,4 +1,7 @@
 $(document).ready(function () {
+	$('#dance-reel-2019-iframe').on('load', function () {
+		$('#dance-reel-2019-spinner').hide();
+	});
 	$('#tmd-iframe').on('load', function () {
 		$('#tmd-spinner').hide();
 	});
