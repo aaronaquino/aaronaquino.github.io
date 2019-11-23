@@ -574,30 +574,6 @@ Show the link that contains the hamburger icon. */
 	background-color: #0d78ce;
 }
 
-#pasu-container {
-	background-color: #d7dae1;
-}
-
-#pasu-button {
-	background-color: #b6bcdc;
-}
-
-#pasu-button:hover {
-	background-color: #9ea5ce;
-}
-
-#spcsi-container {
-	background-color: #e9d7ac;
-}
-
-#spcsi-button {
-	background-color: #ef7777;
-}
-
-#spcsi-button:hover {
-	background-color: #d85c5c;
-}
-
 #eagle-scout-container {
 	background-color: #91ceff;
 }
