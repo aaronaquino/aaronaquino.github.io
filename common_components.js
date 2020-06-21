@@ -10,11 +10,11 @@ document.getElementById("copyright-footer").innerHTML =
 /**
  * Adds the navigation menu and buttons.
  */
-document.getElementById("top-nav").innerHTML = "<div id='logo-container'>" +
-	"<a class='mobile-nav' href='/index.html'><img id='logo' src='/assets/logo.png' alt='Aaron's logo'></a>" +
-	"</div>" +
+document.getElementById("top-nav").innerHTML = "<a href='/index.html' id='logo-container'><img id='logo' src='/assets/logo.png' alt='Aaron's logo'></a>" +
+	"<div id='spacer'></div>" +
+	"<a id='hamburger-button' class='menu-button-untouched' onclick='toggleTopNav()' href='javascript:void(0);' aria-labelledby='hamburger-aria-instructions'><div id='hamburger-aria-instructions' class='screenreader-only'>Click to open menu</div><i aria-hidden='true' class='fa fa-bars'></i></a>" +
+	"<div id='break'></div>" +
 	"<div id='menu-buttons-container'>" +
-	"<a id='hamburger-button' class='menu-button-untouched mobile-nav' onclick='toggleTopNav()' href='javascript:void(0);' aria-labelledby='hamburger-aria-instructions'><div id='hamburger-aria-instructions' class='screenreader-only'>Click to open menu</div><i aria-hidden='true' class='fa fa-bars'></i></a>" +
 	"<a class='menu-button menu-button-untouched' href='/hacker.html'>Hacker</a>" +
 	"<a class='menu-button menu-button-untouched' href='/connector.html'>Connector</a>" +
 	"<a class='menu-button menu-button-untouched' href='/dancer.html'>Dancer</a>" +
@@ -27,9 +27,9 @@ document.getElementById("top-nav").innerHTML = "<div id='logo-container'>" +
  * Toggle between adding and removing the "responsive" class to the topnav when the user clicks on the hamburger icon.
  */
 function toggleTopNav() {
-	let topNav = document.getElementById("top-nav");
-	let hamburgerButton = document.getElementById("hamburger-button");
-	let menuButtonsContainer = document.getElementById("menu-buttons-container");
+	const topNav = document.getElementById("top-nav");
+	const hamburgerButton = document.getElementById("hamburger-button");
+	const menuButtonsContainer = document.getElementById("menu-buttons-container");
 	if (!topNav.classList.contains("responsive")) {
 		topNav.classList.add("responsive");
 		menuButtonsContainer.classList.add("responsive");
