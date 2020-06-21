@@ -10,8 +10,7 @@ document.getElementById("copyright-footer").innerHTML =
 /**
  * Adds the navigation menu and buttons.
  */
-document.getElementById("menu").innerHTML = "<div id='top-nav' role='navigation'>" +
-	"<div id='logo-container'>" +
+document.getElementById("top-nav").innerHTML = "<div id='logo-container'>" +
 	"<a class='mobile-nav' href='/index.html'><img id='logo' src='/assets/logo.png' alt='Aaron's logo'></a>" +
 	"</div>" +
 	"<div id='menu-buttons-container'>" +
@@ -21,7 +20,6 @@ document.getElementById("menu").innerHTML = "<div id='top-nav' role='navigation'
 	"<a class='menu-button menu-button-untouched' href='/dancer.html'>Dancer</a>" +
 	"<a class='menu-button menu-button-untouched' href='/creative.html'>Creative</a>" +
 	"<a class='menu-button menu-button-untouched' href='/index.html'>About</a>" +
-	"</div>" +
 	"</div>";
 
 
