@@ -12,7 +12,7 @@ document.getElementById("copyright-footer").innerHTML =
  */
 document.getElementById("top-nav").innerHTML = "<a href='/index.html' id='logo-container'><img id='logo' src='/assets/logo.png' alt='Aaron's logo'></a>" +
 	"<div id='spacer'></div>" +
-	"<a id='hamburger-button' class='menu-button-untouched' onclick='toggleTopNav()' href='javascript:void(0);' aria-labelledby='hamburger-aria-instructions'><div id='hamburger-aria-instructions' class='screenreader-only'>Click to open menu</div><i aria-hidden='true' class='fa fa-bars'></i></a>" +
+	"<a id='hamburger-button' class='menu-button-untouched' onclick='toggleTopNav()' href='javascript:void(0);' aria-labelledby='hamburger-aria-instructions'><div id='hamburger-aria-instructions' class='screenreader-only'>Click to show menu</div><i aria-hidden='true' class='fa fa-bars'></i></a>" +
 	"<div id='break'></div>" +
 	"<div id='menu-buttons-container'>" +
 	"<a class='menu-button menu-button-untouched' href='/hacker.html'>Hacker</a>" +
@@ -30,16 +30,19 @@ function toggleTopNav() {
 	const topNav = document.getElementById("top-nav");
 	const hamburgerButton = document.getElementById("hamburger-button");
 	const menuButtonsContainer = document.getElementById("menu-buttons-container");
+	const hamburgerScreenreaderText = document.getElementById("hamburger-aria-instructions");
 	if (!topNav.classList.contains("responsive")) {
 		topNav.classList.add("responsive");
 		menuButtonsContainer.classList.add("responsive");
 		hamburgerButton.classList.remove("menu-button-untouched");
 		hamburgerButton.classList.add("menu-button-touched");
+		hamburgerScreenreaderText.innerText = 'Click to hide menu';
 	} else {
 		topNav.classList.remove("responsive");
 		menuButtonsContainer.classList.remove("responsive");
 		hamburgerButton.classList.remove("menu-button-touched");
 		hamburgerButton.classList.add("menu-button-untouched");
+		hamburgerScreenreaderText.innerText = 'Click to show menu';
 	}
 }
  
