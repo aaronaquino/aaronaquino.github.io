@@ -115,10 +115,6 @@ hr.section-divider {
 	width: 100px;
 }
 
-#bio-one-line {
-	margin: 30px 0px 20px;
-}
-
 #down-arrow {
 	border-radius: 50%;
 	cursor: pointer;
@@ -132,7 +128,7 @@ hr.section-divider {
 
 #down-arrow-container {
 	width: 50px;
-	margin: 0px auto 24px auto;
+	margin: 0 auto 0 auto;
 }
 
 #homepage-name {
@@ -166,6 +162,7 @@ hr.section-divider {
 }
 
 #homepage-splash {
+	margin-bottom: 16px;
 	margin-top: 30px;
 }
 
@@ -178,7 +175,7 @@ hr.section-divider {
 #about-me {
 	background-color: #d0d8eb;
 	color: #000;
-	padding: 48px 0px 24px 0px;
+	padding: 24px 0;
 }
 
 #profile-picture {
