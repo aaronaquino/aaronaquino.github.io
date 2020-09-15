@@ -27,7 +27,7 @@
 
 	<div class="experience-container">
 		<p>
-			When I returned to Google for my second summer internship, I had the privilege of working at the company's New York City office, which is actually spread across three different buildings in the neighborhood of Chelsea. During my twelve weeks in NYC I worked closely with Chris, a funny, down-to-earth software engineer who served as my project host, as well as another engineer named MT, a Google Slides legend who was there when the product was just getting off the ground and who served as my secondary host. Under these two I not only leveled up my coding skills but also met other employees and took part in Google programming, which helped me explore the company culture more deeply.
+			When I returned to Google for my second summer internship, I had the privilege of working at the company's New York City office, which is actually spread across three different buildings in the neighborhood of Chelsea. During my twelve weeks in NYC I worked closely with my two hosts: Chris, a funny, down-to-earth software engineer who served as my primary host, and MT, a Google Slides legend who was there when the product was just getting off the ground. Under these two I not only leveled up my coding skills but also met other employees and took part in company programming, which helped me explore the Google culture more deeply.
 		</p>
 		<div class="ama-center">
 			<img class="w3-round-large"
@@ -38,10 +38,13 @@
 			<p class="image-description">My amazing Google Slides mentors for the summer</p>
 		</div>
 		<p>
-			My primary project for the summer involved making improvements to the dynamic guides feature in <a href="https://slides.google.com" target="_blank" rel="noreferrer" class="colored-link">Google Slides</a>. These helpful guides appear in specific situations when you're moving or resizing shapes. They show up, for instance, when different shapes' edges align with each other or the widths of two shapes match. After improving the dynamic guides related to tables, I was tasked with creating a new type of guide for assisting with resizing images. At the time, if a user added an image to a presentation and then resized it so it lost its original aspect ratio, there was no easy way to restore the aspect ratio (aside from using Ctrl-Z or deleting and reuploading the image). Under my new aspect ratio guide, however, when a user resizes an image, a nice diagonal guide now appears at the exact moment when the image matches its original aspect ratio.
+			My primary project for the summer involved making improvements to the dynamic guides feature in <a href="https://slides.google.com" target="_blank" rel="noreferrer" class="colored-link">Google Slides</a>. These helpful guides appear in specific situations when you're moving or resizing shapes. They show up, for instance, when different shapes' edges align with each other or the widths of two shapes match.
 		</p>
 		<p>
-			Developing the aspect ratio guide was challenging for two main reasons. First, I had to figure out the best way to integrate this new guide into the existing guide system, which also handled edge guides, size guides, and distance guides, among others. The second challenge was MT's request that the guide function regardless of an image's rotation or whether or not it was flipped over an axis. This required a nuanced understanding of <a href="https://en.wikipedia.org/wiki/Affine_transformation" target="_blank" rel="noreferrer" class="colored-link">affine transforms</a>, which is an area I had never actually studied in my courses at Stanford.
+			After improving the dynamic guides related to tables, I was tasked with creating a new type of guide for assisting with resizing images. At the time, if a user added an image to a presentation and then resized it so it lost its original aspect ratio, there was no easy way to restore the aspect ratio (aside from using Ctrl-Z or deleting and reuploading the image). Under my new aspect ratio guide, however, when a user resizes an image, a nice diagonal guide now appears at the exact moment when the image matches its original aspect ratio.
+		</p>
+		<p>
+			Developing the aspect ratio guide was challenging for two reasons. First, I had to figure out the best way to integrate this new guide into the existing guide system, which also handled edge guides, size guides, and distance guides, among others. The second challenge was MT's request that the guide function regardless of an image's rotation or whether or not it was flipped over an axis. This required a nuanced understanding of <a href="https://en.wikipedia.org/wiki/Affine_transformation" target="_blank" rel="noreferrer" class="colored-link">affine transforms</a>, which is an area I had never actually studied in my courses at school.
 		</p>
 		<div class="ama-center">
 			<img class="w3-round-large"
@@ -52,7 +55,10 @@
 			<p class="image-description">An aspect ratio guide saves a deformed banana!</p>
 		</div>
 		<p>
-			Basically, my first approach to the aspect ratio guide problem was not very pretty: my code was a scary mess of different if/else statements that tried to capture all possible resizing scenarios while computing a lot of complicated trigonometry by hand. Looking over the scratch paper on my workstation, you might've guessed I was back in middle school geometry class. I spent entire days making changes to my code only to test the code later and see that I'd missed a case. But over the next few weeks, I worked closely with MT to apply OOP practices that drastically simplified my implementation while also abstracting most of the linear algebra away to library classes. I was pretty proud of the end result, which was an elegant solution that was thorough, efficient, and best of all, easily understandable. MT and I bonded a lot over those few weeks, which was a big bonus since before that time I was pretty intimidated by his reputation. 
+			To put it bluntly, my first approach to the aspect ratio guide problem was pretty ugly: my code was a scary mess of different if-else statements that tried to capture all possible resizing scenarios while computing a lot of complicated trigonometry by hand. Looking over the scratch paper on my workstation, you might've guessed I was back in middle school geometry class. I spent entire days making changes to my code only to test the code later and see that I'd missed a case.
+		</p>
+		<p>
+			But over the next few weeks, I worked closely with MT to apply OOP practices that drastically simplified my implementation while also abstracting most of the linear algebra away to library classes. I was pretty proud of the end result, which was an elegant solution that was thorough, efficient, and best of all, easily understandable. MT and I bonded a lot over those few weeks, which was a big bonus since before that time I was pretty intimidated by his reputation. 
 		</p>
 	</div>
 </div>
