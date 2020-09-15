@@ -220,7 +220,7 @@ hr {
 }
 
 .more-info-button {
-	margin-top: 20px;
+	margin-top: 32px;
 }
 
 .secondary-caption {
@@ -470,11 +470,17 @@ img[src$=".svg"] { /* For IE compatibility. */
  */
 
 .experience-preview-container {
-	padding: 48px 0px;
+	padding: 48px 0;
 }
 
 .experience-preview-image-container {
-	padding: 8px 0px 18px 0px;
+	padding: 8px 0 18px 0;
+}
+
+.experience-overview {
+	margin: auto;
+	max-width: 700px;
+	width: 75vw;
 }
 
 .experience-container {
