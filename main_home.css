@@ -268,7 +268,7 @@ hr.section-divider {
 	padding: 0.01em 16px;
 }
 
-.ama-container:after, .ama-row:after, .ama-row-padding:after {
+.ama-container:after, .ama-row:after {
 	content: "";
 	display: table;
 	clear: both;
