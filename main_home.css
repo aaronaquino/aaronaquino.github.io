@@ -173,7 +173,7 @@ hr.section-divider {
 }
 
 #about-me {
-	background-color: #d0d8eb;
+	background-color: #cad5ec;
 	color: #000;
 	padding: 24px 0;
 }
@@ -190,7 +190,7 @@ hr.section-divider {
 #hero-text {
 	margin: auto;
 	max-width: 720px;
-	width: 75vw;
+	width: 85vw;
 }
 
 #social-icons {
