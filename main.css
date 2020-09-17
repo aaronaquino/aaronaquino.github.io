@@ -302,6 +302,10 @@ img[src$=".svg"] { /* For IE compatibility. */
 	width: 60vw;
 }
 
+.role-title-container > img {
+	border-radius: initial;
+}
+
 .role-title-container#connector-title-container {
 	width: 80vw;
 }
