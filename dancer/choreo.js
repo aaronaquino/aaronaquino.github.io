@@ -1,6 +1,15 @@
 $(document).ready(function () {
-	$('#dance-reel-2019-iframe').on('load', function () {
-		$('#dance-reel-2019-spinner').hide();
+	$('#remember-iframe').on('load', function () {
+		$('#remember-spinner').hide();
+	});
+	$('#miss-me-iframe').on('load', function () {
+		$('#miss-me-spinner').hide();
+	});
+	$('#three-choreographers-iframe').on('load', function () {
+		$('#three-choreographers-spinner').hide();
+	});
+	$('#dance-reel-2020-iframe').on('load', function () {
+		$('#dance-reel-2020-spinner').hide();
 	});
 	$('#tmd-iframe').on('load', function () {
 		$('#tmd-spinner').hide();
@@ -10,14 +19,5 @@ $(document).ready(function () {
 	});
 	$('#flex-iframe').on('load', function () {
 		$('#flex-spinner').hide();
-	});
-	$('#liftoff-iframe').on('load', function () {
-		$('#liftoff-spinner').hide();
-	});
-	$('#fall-iframe').on('load', function () {
-		$('#fall-spinner').hide();
-	});
-	$('#baby-iframe').on('load', function () {
-		$('#baby-spinner').hide();
 	});
 });
