@@ -481,6 +481,11 @@ img[src$=".svg"] { /* For IE compatibility. */
 	padding: 8px 0 18px 0;
 }
 
+.experience-preview-image-container.cws-logo-container {
+	display: flex;
+	justify-content: center;
+}
+
 .experience-overview {
 	margin: auto;
 	max-width: 700px;
@@ -519,6 +524,39 @@ img[src$=".svg"] { /* For IE compatibility. */
 /**
  * Hacker rules.
  */
+
+#cws-container {
+	background-color: #9ab6e6;
+	padding: 32px 0px;
+}
+
+.cws-logo {
+	width: 68vw;
+}
+
+@media screen and (min-width: 400px) {
+	.cws-logo {
+		width: 50vw;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.cws-logo {
+		width: 40vw;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.cws-logo {
+		width: 25vw;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.cws-logo {
+		width: 250px;
+	}
+}
 
 #gmail-container {
 	background-color: #f5918d;
