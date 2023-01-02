@@ -3,25 +3,35 @@ import '../../styles/choreo.scss';
 import ExperienceLayout from '../../layouts/ExperienceLayout.astro';
 
 const title = "Choreography";
-const videoLinks = [
-    { url: 'https://www.youtube.com/embed/PGetVKw9z9g', title: 'Remember | A Quarantine Short Film', id: 'remember', },
-    { url: 'https://www.youtube.com/embed/AoTqWBCm9P4', title: 'Legacy Dance & Friends: \"Windows\" Virtual Freestyle', id: 'virtual-freestyle', },
-    { url: 'https://www.youtube.com/embed/fkEyF1gD3qg', title: 'Lauv \"miss me (demo)\" Choreography', id: 'miss-me', },
-    { url: 'https://www.youtube.com/embed/f8TKvZQl7mA', title: '3 Choreographers, 1 Song — \"Water\" by Kehlani', id: 'water', },
-    { url: 'https://www.youtube.com/embed/hVhHuVsPJnA', title: 'Aaron Aquino Dance Reel 2020', id: 'dance-reel-2020', },
-    { url: 'https://www.youtube.com/embed/EgAhZq2hzt4', title: 'Gryffin with Elley Duhé \"Tie Me Down\" Choreography', id: 'tie-me-down', },
-];
 ---
 
 <ExperienceLayout title={title}>
 
     <div class="all-videos-container">
-        {videoLinks.map((link) =>
         <div class="youtube-wrapper">
-            <iframe src={link.url} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen aria-labelledby={link.id}></iframe>
-            <p id={link.id} class="youtube-label">{link.title}</p>
+            <iframe src="https://www.youtube.com/embed/PGetVKw9z9g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen aria-labelledby="remember"></iframe>
+            <p id="remember" class="youtube-label">Remember | A Quarantine Short Film</p>
         </div>
-        )}
+        <div class="youtube-wrapper">
+            <iframe src="https://www.youtube.com/embed/AoTqWBCm9P4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen aria-labelledby="virtual-freestyle"></iframe>
+            <p id="virtual-freestyle" class="youtube-label">Legacy Dance & Friends: "Windows" Virtual Freestyle</p>
+        </div>
+        <div class="youtube-wrapper">
+            <iframe src="https://www.youtube.com/embed/fkEyF1gD3qg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen aria-labelledby="miss-me"></iframe>
+            <p id="miss-me" class="youtube-label">Lauv "miss me (demo)" Choreography</p>
+        </div>
+        <div class="youtube-wrapper">
+            <iframe src="https://www.youtube.com/embed/f8TKvZQl7mA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen aria-labelledby="water"></iframe>
+            <p id="water" class="youtube-label">3 Choreographers, 1 Song — "Water</p>
+        </div>
+        <div class="youtube-wrapper">
+            <iframe src="https://www.youtube.com/embed/hVhHuVsPJnA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen aria-labelledby="dance-reel-2020"></iframe>
+            <p id="dance-reel-2020" class="youtube-label">Aaron Aquino Dance Reel 2020</p>
+        </div>
+        <div class="youtube-wrapper">
+            <iframe src="https://www.youtube.com/embed/EgAhZq2hzt4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen aria-labelledby="tie-me-down"></iframe>
+            <p id="tie-me-down" class="youtube-label">Gryffin with Elley Duhé "Tie Me Down" Choreography</p>
+        </div>
     </div>
 
 </ExperienceLayout>
