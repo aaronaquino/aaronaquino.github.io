@@ -1,0 +1,60 @@
+---
+import '../styles/experiences.scss';
+import LearnMoreButton from '../components/LearnMoreButton.astro';
+import ExperienceLayout from '../layouts/ExperienceLayout.astro';
+
+const title = "Creative"
+const subtitle = "Splashes of fuzziness and color"
+---
+<ExperienceLayout title={title} subtitle={subtitle}>
+
+	<div class="experience-previews-container">
+		<div class="experience-preview">
+			<div class="experience-preview-image">
+                <img src="/assets/creative/one_second_2000.jpg"
+                    srcset="/assets/creative/one_second_200.jpg 200w, /assets/creative/one_second_400.jpg 400w, /assets/creative/one_second_800.jpg 800w, /assets/creative/one_second_1000.jpg 1000w, /assets/creative/one_second_2000.jpg 2000w"
+                    sizes="(min-width: 1200px) 420px, (min-width: 900px) 35vw, (min-width: 500px) 50vw, 75vw"
+                    alt="Aaron sitting on a park bench, facing away from the camera">
+			</div>
+			<h3>One Second Every Day</h3>
+            <h4 class="experience-subtitle">2017-Present</h4>
+			<p class="experience-description">
+                An attempt to capture and reflect on some of life's smaller moments through daily videography.
+            </p>
+
+			<LearnMoreButton link="/creative/one_second" />
+		</div>
+
+		<div class="experience-preview">
+			<div class="experience-preview-image">
+                <img src="/assets/creative/sketches_2400.png"
+                    srcset="/assets/creative/sketches_400.png 400w, /assets/creative/sketches_800.png 800w, /assets/creative/sketches_1000.png 1000w, /assets/creative/sketches_2000.png 2000w, /assets/creative/sketches_2400.png 2400w"
+                    sizes="(min-width: 1200px) 420px, (min-width: 900px) 40vw, (min-width: 500px) 60vw, 75vw"
+                    alt="Prototypes for Aaron's logo, which looks like the letter M with a horizontal line through it.">
+            </div>
+			<h3>Sketches</h3>
+			<p class="experience-description">
+                A selection of small graphic design projects I've created in my spare time.
+    		</p>
+
+            <LearnMoreButton link="/creative/sketches" />
+		</div>
+
+		<div class="experience-preview">
+			<div class="experience-preview-image">
+			<img src="/assets/creative/digital_art_2000.jpg"
+				 srcset="/assets/creative/digital_art_200.jpg 200w, /assets/creative/digital_art_400.jpg 400w, /assets/creative/digital_art_800.jpg 800w, /assets/creative/digital_art_1000.jpg 1000w, /assets/creative/digital_art_2000.jpg 2000w"
+				 sizes="(min-width: 1200px) 420px, (min-width: 900px) 35vw, (min-width: 500px) 50vw, 75vw"
+				 alt="A piece of art composed of many different cutouts of photos of Aaron">
+			</div>
+			<h3>Digital Art</h3>
+            <h4 class="experience-subtitle">Spring 2018 | Stanford, CA</h4>
+			<p class="experience-description">
+                A sample of my work from Stanford's ARTSTUDI 179 course.
+            </p>
+
+			<LearnMoreButton link="/creative/digital_art" />
+		</div>
+	</div>
+
+</ExperienceLayout>

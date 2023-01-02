@@ -1,0 +1,27 @@
+---
+import '../../styles/choreo.scss';
+import ExperienceLayout from '../../layouts/ExperienceLayout.astro';
+
+const title = "Choreography";
+const videoLinks = [
+    { url: 'https://www.youtube.com/embed/PGetVKw9z9g', title: 'Remember | A Quarantine Short Film', id: 'remember', },
+    { url: 'https://www.youtube.com/embed/AoTqWBCm9P4', title: 'Legacy Dance & Friends: \"Windows\" Virtual Freestyle', id: 'virtual-freestyle', },
+    { url: 'https://www.youtube.com/embed/fkEyF1gD3qg', title: 'Lauv \"miss me (demo)\" Choreography', id: 'miss-me', },
+    { url: 'https://www.youtube.com/embed/f8TKvZQl7mA', title: '3 Choreographers, 1 Song — \"Water\" by Kehlani', id: 'water', },
+    { url: 'https://www.youtube.com/embed/hVhHuVsPJnA', title: 'Aaron Aquino Dance Reel 2020', id: 'dance-reel-2020', },
+    { url: 'https://www.youtube.com/embed/EgAhZq2hzt4', title: 'Gryffin with Elley Duhé \"Tie Me Down\" Choreography', id: 'tie-me-down', },
+];
+---
+
+<ExperienceLayout title={title}>
+
+    <div class="all-videos-container">
+        {videoLinks.map((link) =>
+        <div class="youtube-wrapper">
+            <iframe src={link.url} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen aria-labelledby={link.id}></iframe>
+            <p id={link.id} class="youtube-label">{link.title}</p>
+        </div>
+        )}
+    </div>
+
+</ExperienceLayout>

@@ -1,0 +1,119 @@
+.hero-content-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 720px;
+	justify-content: center;
+	padding: 0.01em 2.4rem;
+}
+
+.hero-name-image {
+	fill: var(--color-light);
+	margin-top: -64px;
+	max-width: 450px;
+	width: 72vw;
+}
+
+.hero-divider {
+	margin-top: 32px;
+	width: 100px;
+}
+
+.hero-caption {
+	font-size: 3.6rem;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.bio-section {
+	align-items: center;
+	background-color: #3e3e3e;
+	display: flex;
+	flex-direction: column;
+	padding: 60px 0;
+}
+
+.profile-picture {
+	border-radius: 50%;
+	max-width: 225px;
+}
+
+.greeting {
+	font-size: 2rem;
+	margin-top: 36px;
+	max-width: 720px;
+	text-align: center;
+	width: 85vw;
+}
+
+.social-section {
+	padding: 48px 0;
+	text-align: center;
+}
+
+.social-header {
+	font-size: 3.6rem;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	font-family: initial;
+	font-size: 36px;
+	gap: 12px;
+	margin-top: 24px;
+
+	a {
+		color: inherit;
+		text-decoration: initial;
+	}
+
+	i {
+		animation-duration: 0.5s;
+		animation-timing-function: cubic-bezier(0,0,0,1);
+		animation-fill-mode: forwards;
+		transition: all 0.3s;
+		padding: 0 12px;
+	}
+
+	i:hover {
+		transform: translateY(-4px);
+	}
+
+	.linkedin-logo:hover {
+		color: #0077b5;
+	}
+
+	.instagram-logo:hover {
+		background:
+		/* Colors provided by: https://codepen.io/katydecorah/pen/PNLePj */
+	
+		/* left bottom */
+		radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+		radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+		/* left top */
+		radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+		radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+		/* right top */
+		radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+		radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+		/* right bottom */
+		radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+	
+		/* create a base coat to smooth corner gradients */
+		linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+	
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		background-repeat: no-repeat;
+	}
+
+	.spotify-logo:hover {
+		color: #1ed761;
+	}
+
+	.youtube-logo:hover {
+		color: #ff0000;
+	}
+}

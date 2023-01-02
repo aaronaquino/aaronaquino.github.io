@@ -1,0 +1,25 @@
+.all-videos-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 96px;
+    justify-content: center;
+    margin: 96px auto;
+    max-width: 1440px;
+    padding: 0 24px;
+}
+
+.youtube-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.youtube-wrapper > iframe {
+    aspect-ratio: calc(16 / 9);
+    width: 520px;
+}
+
+.youtube-label {
+    margin-top: 8px;
+}

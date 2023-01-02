@@ -1,0 +1,109 @@
+.topNav {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 18px;
+	line-height: 27px;
+	margin: 8px;
+}
+
+.topNav a {
+	padding: 8px;
+	text-decoration: none;
+}
+
+.logoContainer {
+	display: flex;
+	margin-right: auto;
+}
+
+.logo {
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0, 0, 0, 1);
+	fill: var(--color-light);
+	height: 40px;
+	stroke: var(--color-light);
+	transition: transform 0.3s, fill 0.3s, stroke 0.3s;
+	width: 40px;
+
+	&:hover {
+		fill: var(--color-accent);
+		stroke: var(--color-accent);
+		transform: rotate(-8deg);
+	}
+}
+
+.hamburgerButton {
+	align-items: center;
+	background-color: initial;
+	border: initial;
+	display: none;
+	fill: white;
+	padding: 0 12px;
+
+	&.isTouched,
+	&:hover {
+		fill: var(--color-accent);
+	}
+}
+
+.screenreaderOnly {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.break {
+	display: none;
+	flex-basis: 100%;
+}
+
+.menuButtonsContainer {
+	align-items: center;
+	display: flex;
+	gap: 8px;
+}
+
+.menuButton {
+	border-radius: 8px;
+	color: #b8b8b8;
+	display: inline-block;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.menuButton:hover,
+.menuButton:focus {
+	background-color: #edededf1;
+	color: #555;
+}
+
+@media screen and (max-width: 640px) {
+	.menuButton {
+		display: none;
+	}
+
+	.break {
+		display: block;
+	}
+
+	.hamburgerButton {
+		display: flex;
+	}
+
+	.topNav.isResponsive > .menuButtonsContainer {
+		display: block;
+		flex-grow: 1;
+		margin-top: 8px;
+	}
+
+	.menuButtonsContainer.isResponsive .menuButton {
+		display: block;
+		text-align: center;
+	}
+}

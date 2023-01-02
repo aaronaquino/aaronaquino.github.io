@@ -1,0 +1,13 @@
+---
+import '../styles/markdown_layout.scss';
+import ExperienceLayout from '../layouts/ExperienceLayout.astro';
+
+const {content} = Astro.props
+---
+<ExperienceLayout title={content.title} subtitle={content.subtitle}>
+
+    <article class="content-wrapper">
+        <slot />
+    </article>
+
+</ExperienceLayout>

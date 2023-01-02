@@ -1,0 +1,68 @@
+.experience-previews-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    margin: 48px 0;
+    padding: 0 24px;
+}
+
+.experience-preview {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    text-align: center;
+}
+
+.experience-preview-image {
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    width: 68vw;
+}
+
+@media screen and (min-width: 400px) {
+	.experience-preview-image {
+		width: 50vw;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.experience-preview-image {
+		width: 32vw;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.experience-preview-image {
+		width: 22vw;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.experience-preview-image {
+		width: 220px;
+	}
+}
+
+.experience-preview-image > img {
+    border-radius: 24px;
+    margin: 24px 0;
+}
+
+.experience-subtitle {
+    color: #939393;
+}
+
+.experience-description {
+    margin: 16px 0 0;
+}
+
+.app-store-badge-link {
+    margin-top: 24px;
+}
+
+.app-store-badge {
+    width: 144px;
+}

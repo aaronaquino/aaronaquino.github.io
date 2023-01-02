@@ -1,0 +1,16 @@
+---
+import '../styles/experience_layout.scss';
+import StandardLayout from '../layouts/StandardLayout.astro';
+
+const {title, subtitle} = Astro.props
+---
+<StandardLayout>
+
+	<div class="hero-bar">
+		<h1 class="role-title">{title}</h1>
+		{subtitle && <><h2 class="role-subtitle">{subtitle}</h2></>}
+	</div>
+
+    <slot />
+
+</StandardLayout>

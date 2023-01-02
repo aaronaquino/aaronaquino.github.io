@@ -1,0 +1,14 @@
+.learn-more-button {
+    border: 1px var(--color-accent) solid;
+    border-radius: 16px;
+    font-size: 1.8rem;
+    margin-top: 24px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+
+.learn-more-button:hover,
+.learn-more-button:focus {
+    background-color: #6495ed32;
+	text-decoration: none;
+}

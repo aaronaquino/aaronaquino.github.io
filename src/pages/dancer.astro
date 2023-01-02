@@ -1,0 +1,58 @@
+---
+import '../styles/experiences.scss';
+import LearnMoreButton from '../components/LearnMoreButton.astro';
+import ExperienceLayout from '../layouts/ExperienceLayout.astro';
+
+const title = "Dancer"
+const subtitle = "Expression through artistry and athleticism"
+---
+<ExperienceLayout title={title} subtitle={subtitle}>
+
+	<div class="experience-previews-container">
+		<div class="experience-preview">
+			<div class="experience-preview-image">
+                <img src="/assets/dancer/choreo_2000.jpg"
+                    srcset="/assets/dancer/choreo_200.jpg 200w, /assets/dancer/choreo_400.jpg 400w, /assets/dancer/choreo_800.jpg 800w, /assets/dancer/choreo_1000.jpg 1000w, /assets/dancer/choreo_2000.jpg 2000w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 900px) 35vw, (min-width: 500px) 50vw, 75vw"
+                    alt="Aaron performing choreography in a large dance studio">
+            </div>
+			<h3>Choreography & Projects</h3>
+			<p class="experience-description">
+                Check out some of the personal pieces and collaborations that have helped me discover my own style as a choreographer and freestyler.
+    		</p>
+
+            <LearnMoreButton link="/dancer/choreo" />
+		</div>
+
+		<div class="experience-preview">
+			<div class="experience-preview-image">
+                <img src="/assets/dancer/legacy_2000.jpg"
+                    srcset="/assets/dancer/legacy_200.jpg 200w, /assets/dancer/legacy_400.jpg 400w, /assets/dancer/legacy_800.jpg 800w, /assets/dancer/legacy_1000.jpg 1000w, /assets/dancer/legacy_2000.jpg 2000w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 900px) 35vw, (min-width: 500px) 50vw, 75vw"
+                    alt="Members of Legacy dance team">
+			</div>
+			<h3>Legacy</h3>
+			<p class="experience-description">
+                I spent a few years dancing with and directing Legacy, Stanford's competitive choreography dance team.
+            </p>
+
+			<LearnMoreButton link="/dancer/legacy" />
+		</div>
+
+		<div class="experience-preview">
+			<div class="experience-preview-image">
+                <img src="/assets/dancer/common_origins_2000.jpg"
+                    srcset="/assets/dancer/common_origins_200.jpg 200w, /assets/dancer/common_origins_400.jpg 400w, /assets/dancer/common_origins_800.jpg 800w, /assets/dancer/common_origins_1000.jpg 1000w, /assets/dancer/common_origins_2000.jpg 2000w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 900px) 35vw, (min-width: 500px) 50vw, 75vw"
+                    alt="Dancers from Common Origins performing on stage">
+			</div>
+			<h3>Common Origins</h3>
+			<p class="experience-description">
+                Founded in 2010, this incredible team is where my collegiate dance journey and introduction to the wider choreography community began.
+            </p>
+
+			<LearnMoreButton link="/dancer/common_origins" />
+		</div>
+	</div>
+
+</ExperienceLayout>
