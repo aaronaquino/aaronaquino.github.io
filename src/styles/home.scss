@@ -117,3 +117,9 @@
 		color: #ff0000;
 	}
 }
+
+@media screen and (max-width: 540px) {
+	.hero-content-wrapper {
+		height: 500px;
+	}
+}
