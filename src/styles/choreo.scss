@@ -22,4 +22,13 @@
 
 .youtube-label {
     margin-top: 8px;
+    text-align: center;
+    width: 520px;
+}
+
+@media screen and (max-width: 540px) {
+    .youtube-wrapper > iframe,
+    .youtube-label {
+        width: 300px;
+    }
 }

@@ -11,6 +11,11 @@
 	text-decoration: none;
 }
 
+.topNav a:focus,
+.topNav a:hover {
+	text-decoration: none;
+}
+
 .logoContainer {
 	display: flex;
 	margin-right: auto;

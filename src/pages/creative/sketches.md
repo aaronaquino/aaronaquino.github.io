@@ -8,7 +8,7 @@ layout: ../../layouts/MarkdownLayout.astro
             srcset="/assets/creative/dance_journey_400.png 400w, /assets/creative/dance_journey_800.png 800w, /assets/creative/dance_journey_1000.png 1000w, /assets/creative/dance_journey_2000.png 2000w, /assets/creative/dance_journey_2400.png 2400w"
             sizes="(min-width: 1024px) 772px, (min-width: 600px) 70vw, 75vw"
             alt="">
-    <figcaption>My choreography dance journey from 2013-2018 (2018)</figcaption>
+    <figcaption>My choreography dance journey from 2013-2018</figcaption>
 </figure>
 
 I love design projects that give me the chance to reflect on years of past experiences, and this piece was no exception (for other examples, check out my work in the [Digital Art](/creative/digital_art) section). You can trace the origins of this work back to 2018, when I decided it would be a good idea to start a dance journal to track my progress as both a student and teacher of choreography. The journal itself isn't very elaborate (it's actually a Google Sheet, since I do almost everything digitally these days), but it does the job of keeping track of every class I've taken, workshop I've led, and performance I've been a part of, in addition to personal and technical lessons learned with each experience. A few summers ago I began toying with the idea of creating some sort of visual representation of this unique, personal dataset as a way to commemorate and reflect on my journey so far.
