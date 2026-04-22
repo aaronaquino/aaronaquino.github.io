@@ -1,0 +1,10 @@
+// Hides the given element so it's only visible to screen readers.
+@mixin screenreader-only {
+    border: 0;
+    height: 1px;
+    left: -9999px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
